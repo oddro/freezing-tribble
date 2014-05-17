@@ -19,6 +19,10 @@
 		43E490A419272B1400EA384A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908C19272B1400EA384A /* UIKit.framework */; };
 		43E490AC19272B1400EA384A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43E490AA19272B1400EA384A /* InfoPlist.strings */; };
 		43E490AE19272B1400EA384A /* SMS_GuardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E490AD19272B1400EA384A /* SMS_GuardTests.m */; };
+		43E490C119272C7100EA384A /* smsGuardMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E490C019272C7100EA384A /* smsGuardMessageViewController.m */; };
+		43E490C819272E5D00EA384A /* smsGuardSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E490C719272E5D00EA384A /* smsGuardSettingViewController.m */; };
+		43E490CB19272E6E00EA384A /* smsGuardContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E490CA19272E6E00EA384A /* smsGuardContactsViewController.m */; };
+		43E490CE19272E7D00EA384A /* smsGuardActivationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E490CD19272E7D00EA384A /* smsGuardActivationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,14 @@
 		43E490A919272B1400EA384A /* SMS GuardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SMS GuardTests-Info.plist"; sourceTree = "<group>"; };
 		43E490AB19272B1400EA384A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		43E490AD19272B1400EA384A /* SMS_GuardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMS_GuardTests.m; sourceTree = "<group>"; };
+		43E490BF19272C7100EA384A /* smsGuardMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smsGuardMessageViewController.h; sourceTree = "<group>"; };
+		43E490C019272C7100EA384A /* smsGuardMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smsGuardMessageViewController.m; sourceTree = "<group>"; };
+		43E490C619272E5D00EA384A /* smsGuardSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smsGuardSettingViewController.h; sourceTree = "<group>"; };
+		43E490C719272E5D00EA384A /* smsGuardSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smsGuardSettingViewController.m; sourceTree = "<group>"; };
+		43E490C919272E6E00EA384A /* smsGuardContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smsGuardContactsViewController.h; sourceTree = "<group>"; };
+		43E490CA19272E6E00EA384A /* smsGuardContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smsGuardContactsViewController.m; sourceTree = "<group>"; };
+		43E490CC19272E7D00EA384A /* smsGuardActivationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smsGuardActivationViewController.h; sourceTree = "<group>"; };
+		43E490CD19272E7D00EA384A /* smsGuardActivationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smsGuardActivationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,7 @@
 		43E4907C19272B1300EA384A = {
 			isa = PBXGroup;
 			children = (
+				43E490B719272BE800EA384A /* app */,
 				43E4908E19272B1400EA384A /* SMS Guard */,
 				43E490A719272B1400EA384A /* SMS GuardTests */,
 				43E4908719272B1400EA384A /* Frameworks */,
@@ -142,6 +155,109 @@
 				43E490AA19272B1400EA384A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43E490B719272BE800EA384A /* app */ = {
+			isa = PBXGroup;
+			children = (
+				43E490C219272CE700EA384A /* assets */,
+				43E490B819272BE800EA384A /* helper */,
+				43E490B919272BE800EA384A /* library */,
+				43E490BA19272BE800EA384A /* view */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		43E490B819272BE800EA384A /* helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		43E490B919272BE800EA384A /* library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		43E490BA19272BE800EA384A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				43E490BB19272C4900EA384A /* activation */,
+				43E490BC19272C4900EA384A /* contacts */,
+				43E490BD19272C4900EA384A /* messages */,
+				43E490BE19272C4900EA384A /* settings */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		43E490BB19272C4900EA384A /* activation */ = {
+			isa = PBXGroup;
+			children = (
+				43E490CC19272E7D00EA384A /* smsGuardActivationViewController.h */,
+				43E490CD19272E7D00EA384A /* smsGuardActivationViewController.m */,
+			);
+			path = activation;
+			sourceTree = "<group>";
+		};
+		43E490BC19272C4900EA384A /* contacts */ = {
+			isa = PBXGroup;
+			children = (
+				43E490C919272E6E00EA384A /* smsGuardContactsViewController.h */,
+				43E490CA19272E6E00EA384A /* smsGuardContactsViewController.m */,
+			);
+			path = contacts;
+			sourceTree = "<group>";
+		};
+		43E490BD19272C4900EA384A /* messages */ = {
+			isa = PBXGroup;
+			children = (
+				43E490BF19272C7100EA384A /* smsGuardMessageViewController.h */,
+				43E490C019272C7100EA384A /* smsGuardMessageViewController.m */,
+			);
+			path = messages;
+			sourceTree = "<group>";
+		};
+		43E490BE19272C4900EA384A /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				43E490C619272E5D00EA384A /* smsGuardSettingViewController.h */,
+				43E490C719272E5D00EA384A /* smsGuardSettingViewController.m */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		43E490C219272CE700EA384A /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				43E490C319272CE700EA384A /* common */,
+				43E490C419272CE700EA384A /* navbar */,
+				43E490C519272CE700EA384A /* tab */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		43E490C319272CE700EA384A /* common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		43E490C419272CE700EA384A /* navbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = navbar;
+			sourceTree = "<group>";
+		};
+		43E490C519272CE700EA384A /* tab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +356,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E490CE19272E7D00EA384A /* smsGuardActivationViewController.m in Sources */,
 				43E4909519272B1400EA384A /* main.m in Sources */,
+				43E490CB19272E6E00EA384A /* smsGuardContactsViewController.m in Sources */,
+				43E490C819272E5D00EA384A /* smsGuardSettingViewController.m in Sources */,
 				43E4909919272B1400EA384A /* enervoAppDelegate.m in Sources */,
+				43E490C119272C7100EA384A /* smsGuardMessageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

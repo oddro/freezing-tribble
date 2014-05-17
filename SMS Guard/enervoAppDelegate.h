@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface enervoAppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    NSArray *controller;
+}
 @property (strong, nonatomic) UIWindow *window;
+
 
 @end
