@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43E4908919272B1400EA384A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908819272B1400EA384A /* Foundation.framework */; };
+		43E4908B19272B1400EA384A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908A19272B1400EA384A /* CoreGraphics.framework */; };
+		43E4908D19272B1400EA384A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908C19272B1400EA384A /* UIKit.framework */; };
+		43E4909319272B1400EA384A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43E4909119272B1400EA384A /* InfoPlist.strings */; };
+		43E4909519272B1400EA384A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4909419272B1400EA384A /* main.m */; };
+		43E4909919272B1400EA384A /* enervoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4909819272B1400EA384A /* enervoAppDelegate.m */; };
+		43E4909B19272B1400EA384A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E4909A19272B1400EA384A /* Images.xcassets */; };
+		43E490A219272B1400EA384A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E490A119272B1400EA384A /* XCTest.framework */; };
+		43E490A319272B1400EA384A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908819272B1400EA384A /* Foundation.framework */; };
+		43E490A419272B1400EA384A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908C19272B1400EA384A /* UIKit.framework */; };
+		43E490AC19272B1400EA384A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43E490AA19272B1400EA384A /* InfoPlist.strings */; };
+		43E490AE19272B1400EA384A /* SMS_GuardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E490AD19272B1400EA384A /* SMS_GuardTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43E490A519272B1400EA384A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43E4907D19272B1300EA384A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43E4908419272B1400EA384A;
+			remoteInfo = "SMS Guard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43E4908519272B1400EA384A /* SMS Guard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Guard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E4908819272B1400EA384A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43E4908A19272B1400EA384A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43E4908C19272B1400EA384A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		43E4909019272B1400EA384A /* SMS Guard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SMS Guard-Info.plist"; sourceTree = "<group>"; };
+		43E4909219272B1400EA384A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43E4909419272B1400EA384A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43E4909619272B1400EA384A /* SMS Guard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMS Guard-Prefix.pch"; sourceTree = "<group>"; };
+		43E4909719272B1400EA384A /* enervoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = enervoAppDelegate.h; sourceTree = "<group>"; };
+		43E4909819272B1400EA384A /* enervoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = enervoAppDelegate.m; sourceTree = "<group>"; };
+		43E4909A19272B1400EA384A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		43E490A019272B1400EA384A /* SMS GuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SMS GuardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E490A119272B1400EA384A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		43E490A919272B1400EA384A /* SMS GuardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SMS GuardTests-Info.plist"; sourceTree = "<group>"; };
+		43E490AB19272B1400EA384A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43E490AD19272B1400EA384A /* SMS_GuardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMS_GuardTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43E4908219272B1400EA384A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E4908B19272B1400EA384A /* CoreGraphics.framework in Frameworks */,
+				43E4908D19272B1400EA384A /* UIKit.framework in Frameworks */,
+				43E4908919272B1400EA384A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E4909D19272B1400EA384A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E490A219272B1400EA384A /* XCTest.framework in Frameworks */,
+				43E490A419272B1400EA384A /* UIKit.framework in Frameworks */,
+				43E490A319272B1400EA384A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43E4907C19272B1300EA384A = {
+			isa = PBXGroup;
+			children = (
+				43E4908E19272B1400EA384A /* SMS Guard */,
+				43E490A719272B1400EA384A /* SMS GuardTests */,
+				43E4908719272B1400EA384A /* Frameworks */,
+				43E4908619272B1400EA384A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43E4908619272B1400EA384A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43E4908519272B1400EA384A /* SMS Guard.app */,
+				43E490A019272B1400EA384A /* SMS GuardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43E4908719272B1400EA384A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E4908819272B1400EA384A /* Foundation.framework */,
+				43E4908A19272B1400EA384A /* CoreGraphics.framework */,
+				43E4908C19272B1400EA384A /* UIKit.framework */,
+				43E490A119272B1400EA384A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43E4908E19272B1400EA384A /* SMS Guard */ = {
+			isa = PBXGroup;
+			children = (
+				43E4909719272B1400EA384A /* enervoAppDelegate.h */,
+				43E4909819272B1400EA384A /* enervoAppDelegate.m */,
+				43E4909A19272B1400EA384A /* Images.xcassets */,
+				43E4908F19272B1400EA384A /* Supporting Files */,
+			);
+			path = "SMS Guard";
+			sourceTree = "<group>";
+		};
+		43E4908F19272B1400EA384A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43E4909019272B1400EA384A /* SMS Guard-Info.plist */,
+				43E4909119272B1400EA384A /* InfoPlist.strings */,
+				43E4909419272B1400EA384A /* main.m */,
+				43E4909619272B1400EA384A /* SMS Guard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43E490A719272B1400EA384A /* SMS GuardTests */ = {
+			isa = PBXGroup;
+			children = (
+				43E490AD19272B1400EA384A /* SMS_GuardTests.m */,
+				43E490A819272B1400EA384A /* Supporting Files */,
+			);
+			path = "SMS GuardTests";
+			sourceTree = "<group>";
+		};
+		43E490A819272B1400EA384A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43E490A919272B1400EA384A /* SMS GuardTests-Info.plist */,
+				43E490AA19272B1400EA384A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43E4908419272B1400EA384A /* SMS Guard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E490B119272B1400EA384A /* Build configuration list for PBXNativeTarget "SMS Guard" */;
+			buildPhases = (
+				43E4908119272B1400EA384A /* Sources */,
+				43E4908219272B1400EA384A /* Frameworks */,
+				43E4908319272B1400EA384A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SMS Guard";
+			productName = "SMS Guard";
+			productReference = 43E4908519272B1400EA384A /* SMS Guard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43E4909F19272B1400EA384A /* SMS GuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E490B419272B1400EA384A /* Build configuration list for PBXNativeTarget "SMS GuardTests" */;
+			buildPhases = (
+				43E4909C19272B1400EA384A /* Sources */,
+				43E4909D19272B1400EA384A /* Frameworks */,
+				43E4909E19272B1400EA384A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43E490A619272B1400EA384A /* PBXTargetDependency */,
+			);
+			name = "SMS GuardTests";
+			productName = "SMS GuardTests";
+			productReference = 43E490A019272B1400EA384A /* SMS GuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43E4907D19272B1300EA384A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = enervo;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = enervo;
+				TargetAttributes = {
+					43E4909F19272B1400EA384A = {
+						TestTargetID = 43E4908419272B1400EA384A;
+					};
+				};
+			};
+			buildConfigurationList = 43E4908019272B1300EA384A /* Build configuration list for PBXProject "SMS Guard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43E4907C19272B1300EA384A;
+			productRefGroup = 43E4908619272B1400EA384A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43E4908419272B1400EA384A /* SMS Guard */,
+				43E4909F19272B1400EA384A /* SMS GuardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43E4908319272B1400EA384A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E4909319272B1400EA384A /* InfoPlist.strings in Resources */,
+				43E4909B19272B1400EA384A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E4909E19272B1400EA384A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E490AC19272B1400EA384A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43E4908119272B1400EA384A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E4909519272B1400EA384A /* main.m in Sources */,
+				43E4909919272B1400EA384A /* enervoAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E4909C19272B1400EA384A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E490AE19272B1400EA384A /* SMS_GuardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43E490A619272B1400EA384A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43E4908419272B1400EA384A /* SMS Guard */;
+			targetProxy = 43E490A519272B1400EA384A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43E4909119272B1400EA384A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43E4909219272B1400EA384A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		43E490AA19272B1400EA384A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43E490AB19272B1400EA384A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43E490AF19272B1400EA384A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		43E490B019272B1400EA384A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43E490B219272B1400EA384A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMS Guard/SMS Guard-Prefix.pch";
+				INFOPLIST_FILE = "SMS Guard/SMS Guard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		43E490B319272B1400EA384A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMS Guard/SMS Guard-Prefix.pch";
+				INFOPLIST_FILE = "SMS Guard/SMS Guard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		43E490B519272B1400EA384A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SMS Guard.app/SMS Guard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMS Guard/SMS Guard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SMS GuardTests/SMS GuardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		43E490B619272B1400EA384A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SMS Guard.app/SMS Guard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMS Guard/SMS Guard-Prefix.pch";
+				INFOPLIST_FILE = "SMS GuardTests/SMS GuardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43E4908019272B1300EA384A /* Build configuration list for PBXProject "SMS Guard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E490AF19272B1400EA384A /* Debug */,
+				43E490B019272B1400EA384A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43E490B119272B1400EA384A /* Build configuration list for PBXNativeTarget "SMS Guard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E490B219272B1400EA384A /* Debug */,
+				43E490B319272B1400EA384A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43E490B419272B1400EA384A /* Build configuration list for PBXNativeTarget "SMS GuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E490B519272B1400EA384A /* Debug */,
+				43E490B619272B1400EA384A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43E4907D19272B1300EA384A /* Project object */;
+}
