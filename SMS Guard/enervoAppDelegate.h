@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface enervoAppDelegate : UIResponder <UIApplicationDelegate>
+@interface enervoAppDelegate : UIResponder <UIApplicationDelegate,UITabBarControllerDelegate>
 {
     NSArray *controller;
+    UITabBarController *tabBarController;
 }
 @property (strong, nonatomic) UIWindow *window;
 

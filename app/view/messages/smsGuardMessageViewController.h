@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface smsGuardMessageViewController : UIViewController
-
+@interface smsGuardMessageViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    UITableView *messageTable;
+}
 @end

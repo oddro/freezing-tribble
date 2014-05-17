@@ -7,7 +7,7 @@
 //
 
 #import "smsGuardMessageViewController.h"
-
+#import "MessageTableViewCell.h"
 @interface smsGuardMessageViewController ()
 
 @end
@@ -18,11 +18,35 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        self.view.backgroundColor = [UIColor whiteColor];
         // Custom initialization
+        self.title = @"Messages";
+        
+        messageTable  =[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-(64+50))];
+        messageTable.delegate = self;
+        messageTable.dataSource = self;
+        
+        [self.view addSubview:messageTable];
     }
     return self;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 80;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cells = @"cell";
+    MessageTableViewCell *cell = [[MessageTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cells];
+    if(!cell){
+        cell = [[MessageTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cells];
+    }
+    cell.message.text = @"Traveling back and forth through time, Cable recently traveled back to the future with a special purpose";
+    [cell.message sizeToFit];
+    return cell;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];

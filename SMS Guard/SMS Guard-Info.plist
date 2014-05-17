@@ -34,5 +34,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>pn-light.otf</string>
+		<string>pn-regular.otf</string>
+		<string>pn-semi-bold.otf</string>
+	</array>
 </dict>
 </plist>

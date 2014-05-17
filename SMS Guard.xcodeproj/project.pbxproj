@@ -23,6 +23,13 @@
 		43E490C819272E5D00EA384A /* smsGuardSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E490C719272E5D00EA384A /* smsGuardSettingViewController.m */; };
 		43E490CB19272E6E00EA384A /* smsGuardContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E490CA19272E6E00EA384A /* smsGuardContactsViewController.m */; };
 		43E490CE19272E7D00EA384A /* smsGuardActivationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E490CD19272E7D00EA384A /* smsGuardActivationViewController.m */; };
+		43E490D0192731B100EA384A /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E490CF192731B100EA384A /* navbar@2x.png */; };
+		43E490D21927340000EA384A /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E490D11927340000EA384A /* tabbar@2x.png */; };
+		43E490D71927346C00EA384A /* pn-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43E490D41927346C00EA384A /* pn-light.otf */; };
+		43E490D81927346C00EA384A /* pn-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43E490D51927346C00EA384A /* pn-regular.otf */; };
+		43E490D91927346C00EA384A /* pn-semi-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43E490D61927346C00EA384A /* pn-semi-bold.otf */; };
+		43E490DD1927349C00EA384A /* enervo.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E490DC1927349C00EA384A /* enervo.m */; };
+		43E490E11927386100EA384A /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E490E01927386100EA384A /* MessageTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,15 @@
 		43E490CA19272E6E00EA384A /* smsGuardContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smsGuardContactsViewController.m; sourceTree = "<group>"; };
 		43E490CC19272E7D00EA384A /* smsGuardActivationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smsGuardActivationViewController.h; sourceTree = "<group>"; };
 		43E490CD19272E7D00EA384A /* smsGuardActivationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smsGuardActivationViewController.m; sourceTree = "<group>"; };
+		43E490CF192731B100EA384A /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
+		43E490D11927340000EA384A /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
+		43E490D41927346C00EA384A /* pn-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pn-light.otf"; sourceTree = "<group>"; };
+		43E490D51927346C00EA384A /* pn-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pn-regular.otf"; sourceTree = "<group>"; };
+		43E490D61927346C00EA384A /* pn-semi-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pn-semi-bold.otf"; sourceTree = "<group>"; };
+		43E490DB1927349C00EA384A /* enervo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enervo.h; sourceTree = "<group>"; };
+		43E490DC1927349C00EA384A /* enervo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = enervo.m; sourceTree = "<group>"; };
+		43E490DF1927386100EA384A /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
+		43E490E01927386100EA384A /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +187,7 @@
 		43E490B819272BE800EA384A /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				43E490DA1927349100EA384A /* const */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -178,6 +195,7 @@
 		43E490B919272BE800EA384A /* library */ = {
 			isa = PBXGroup;
 			children = (
+				43E490DE1927384900EA384A /* cell */,
 			);
 			path = library;
 			sourceTree = "<group>";
@@ -232,6 +250,7 @@
 		43E490C219272CE700EA384A /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				43E490D31927346C00EA384A /* font */,
 				43E490C319272CE700EA384A /* common */,
 				43E490C419272CE700EA384A /* navbar */,
 				43E490C519272CE700EA384A /* tab */,
@@ -249,6 +268,8 @@
 		43E490C419272CE700EA384A /* navbar */ = {
 			isa = PBXGroup;
 			children = (
+				43E490D11927340000EA384A /* tabbar@2x.png */,
+				43E490CF192731B100EA384A /* navbar@2x.png */,
 			);
 			path = navbar;
 			sourceTree = "<group>";
@@ -258,6 +279,34 @@
 			children = (
 			);
 			path = tab;
+			sourceTree = "<group>";
+		};
+		43E490D31927346C00EA384A /* font */ = {
+			isa = PBXGroup;
+			children = (
+				43E490D41927346C00EA384A /* pn-light.otf */,
+				43E490D51927346C00EA384A /* pn-regular.otf */,
+				43E490D61927346C00EA384A /* pn-semi-bold.otf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		43E490DA1927349100EA384A /* const */ = {
+			isa = PBXGroup;
+			children = (
+				43E490DB1927349C00EA384A /* enervo.h */,
+				43E490DC1927349C00EA384A /* enervo.m */,
+			);
+			path = const;
+			sourceTree = "<group>";
+		};
+		43E490DE1927384900EA384A /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				43E490DF1927386100EA384A /* MessageTableViewCell.h */,
+				43E490E01927386100EA384A /* MessageTableViewCell.m */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,8 +385,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E490D81927346C00EA384A /* pn-regular.otf in Resources */,
 				43E4909319272B1400EA384A /* InfoPlist.strings in Resources */,
+				43E490D91927346C00EA384A /* pn-semi-bold.otf in Resources */,
+				43E490D71927346C00EA384A /* pn-light.otf in Resources */,
 				43E4909B19272B1400EA384A /* Images.xcassets in Resources */,
+				43E490D21927340000EA384A /* tabbar@2x.png in Resources */,
+				43E490D0192731B100EA384A /* navbar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,10 +411,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E490CE19272E7D00EA384A /* smsGuardActivationViewController.m in Sources */,
+				43E490E11927386100EA384A /* MessageTableViewCell.m in Sources */,
 				43E4909519272B1400EA384A /* main.m in Sources */,
 				43E490CB19272E6E00EA384A /* smsGuardContactsViewController.m in Sources */,
 				43E490C819272E5D00EA384A /* smsGuardSettingViewController.m in Sources */,
 				43E4909919272B1400EA384A /* enervoAppDelegate.m in Sources */,
+				43E490DD1927349C00EA384A /* enervo.m in Sources */,
 				43E490C119272C7100EA384A /* smsGuardMessageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

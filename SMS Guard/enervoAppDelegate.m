@@ -13,14 +13,41 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-//    init controller yang akan di gunakan
-    controller =@[@"smsGuardMessageViewController",@"smsGuardMessageViewController",@"smsGuardMessageViewController",@"smsGuardMessageViewController"];
+    ///do some dirty work
+    tabBarController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
+    //init nav
+    
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-200.f, 0) forBarMetrics:UIBarMetricsDefault];
+	[[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar"] forBarMetrics:UIBarMetricsDefault];
+	[[UINavigationBar appearance] setTintColor:[UIColor lightGrayColor]];
+	
+	NSShadow *shadow = [[NSShadow alloc] init];
+    
+	shadow.shadowColor = [UIColor clearColor];
+    
+	shadow.shadowOffset = CGSizeMake(0, 1);
+    
+	[[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                           shadow, NSShadowAttributeName,
+                                                           [UIFont fontWithName:fontDefault size:18], NSFontAttributeName, nil]];
+    
+    UINavigationController *nav1 =[[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(@"smsGuardMessageViewController") alloc]init]];
+    UINavigationController *nav2 =[[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(@"smsGuardMessageViewController") alloc]init]];
+    UINavigationController *nav3 =[[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(@"smsGuardMessageViewController") alloc]init]];
+    UINavigationController *nav4 =[[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(@"smsGuardMessageViewController") alloc]init]];
+    
+    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"]];
+    [[UITabBar appearance]setTintColor:[UIColor whiteColor]];
+    
+    [tabBarController setViewControllers:@[nav1,nav2,nav3,nav4] animated:YES];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
-
+    
     return YES;
 }
 
@@ -32,7 +59,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
