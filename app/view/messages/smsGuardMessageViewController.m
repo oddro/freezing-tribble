@@ -8,6 +8,7 @@
 
 #import "smsGuardMessageViewController.h"
 #import "MessageTableViewCell.h"
+#import "smsGuardDetailMessagingViewController.h"
 @interface smsGuardMessageViewController ()
 
 @end
@@ -46,6 +47,12 @@
     cell.message.text = @"Traveling back and forth through time, Cable recently traveled back to the future with a special purpose";
     [cell.message sizeToFit];
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    smsGuardDetailMessagingViewController *detail =[[smsGuardDetailMessagingViewController alloc]init];
+    detail.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:detail animated:YES];
+    
 }
 - (void)viewDidLoad
 {
