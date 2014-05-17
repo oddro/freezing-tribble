@@ -78,10 +78,10 @@
 		43E49163192754F200EA384A /* JSQMessagesToolbarContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E49132192754F200EA384A /* JSQMessagesToolbarContentView.xib */; };
 		43E49164192754F200EA384A /* JSQMessagesTypingIndicatorFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E49134192754F200EA384A /* JSQMessagesTypingIndicatorFooterView.m */; };
 		43E49165192754F200EA384A /* JSQMessagesTypingIndicatorFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E49135192754F200EA384A /* JSQMessagesTypingIndicatorFooterView.xib */; };
-		43E4916A192755F600EA384A /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E49169192755F600EA384A /* JSQSystemSoundPlayer.m */; };
 		43E4916E1927563300EA384A /* smsGuardDetailMessagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4916D1927563300EA384A /* smsGuardDetailMessagingViewController.m */; };
 		43E491711927577F00EA384A /* demo_avatar_cook.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E4916F1927577F00EA384A /* demo_avatar_cook.png */; };
 		43E491721927577F00EA384A /* demo_avatar_cook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E491701927577F00EA384A /* demo_avatar_cook@2x.png */; };
+		43E491771927B88100EA384A /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E491761927B88100EA384A /* JSQSystemSoundPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,12 +202,12 @@
 		43E49133192754F200EA384A /* JSQMessagesTypingIndicatorFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSQMessagesTypingIndicatorFooterView.h; sourceTree = "<group>"; };
 		43E49134192754F200EA384A /* JSQMessagesTypingIndicatorFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSQMessagesTypingIndicatorFooterView.m; sourceTree = "<group>"; };
 		43E49135192754F200EA384A /* JSQMessagesTypingIndicatorFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSQMessagesTypingIndicatorFooterView.xib; sourceTree = "<group>"; };
-		43E49168192755F600EA384A /* JSQSystemSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSQSystemSoundPlayer.h; sourceTree = "<group>"; };
-		43E49169192755F600EA384A /* JSQSystemSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSQSystemSoundPlayer.m; sourceTree = "<group>"; };
 		43E4916C1927563300EA384A /* smsGuardDetailMessagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smsGuardDetailMessagingViewController.h; sourceTree = "<group>"; };
 		43E4916D1927563300EA384A /* smsGuardDetailMessagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smsGuardDetailMessagingViewController.m; sourceTree = "<group>"; };
 		43E4916F1927577F00EA384A /* demo_avatar_cook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo_avatar_cook.png; sourceTree = "<group>"; };
 		43E491701927577F00EA384A /* demo_avatar_cook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo_avatar_cook@2x.png"; sourceTree = "<group>"; };
+		43E491751927B88100EA384A /* JSQSystemSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSQSystemSoundPlayer.h; sourceTree = "<group>"; };
+		43E491761927B88100EA384A /* JSQSystemSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSQSystemSoundPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,7 +327,7 @@
 		43E490B919272BE800EA384A /* library */ = {
 			isa = PBXGroup;
 			children = (
-				43E49166192755F600EA384A /* JSQSystemSoundPlayer */,
+				43E491731927B88100EA384A /* JSQSystemSoundPlayer */,
 				43E490E2192754F200EA384A /* JSQMessagesViewController */,
 				43E490DE1927384900EA384A /* cell */,
 			);
@@ -599,23 +599,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		43E49166192755F600EA384A /* JSQSystemSoundPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				43E49167192755F600EA384A /* Classes */,
-			);
-			path = JSQSystemSoundPlayer;
-			sourceTree = "<group>";
-		};
-		43E49167192755F600EA384A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				43E49168192755F600EA384A /* JSQSystemSoundPlayer.h */,
-				43E49169192755F600EA384A /* JSQSystemSoundPlayer.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		43E4916B1927561900EA384A /* messaging-detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -623,6 +606,23 @@
 				43E4916D1927563300EA384A /* smsGuardDetailMessagingViewController.m */,
 			);
 			path = "messaging-detail";
+			sourceTree = "<group>";
+		};
+		43E491731927B88100EA384A /* JSQSystemSoundPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				43E491741927B88100EA384A /* Classes */,
+			);
+			path = JSQSystemSoundPlayer;
+			sourceTree = "<group>";
+		};
+		43E491741927B88100EA384A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43E491751927B88100EA384A /* JSQSystemSoundPlayer.h */,
+				43E491761927B88100EA384A /* JSQSystemSoundPlayer.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -759,7 +759,6 @@
 				43E49162192754F200EA384A /* JSQMessagesToolbarContentView.m in Sources */,
 				43E49154192754F200EA384A /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
 				43E49150192754F200EA384A /* JSQMessagesAvatarFactory.m in Sources */,
-				43E4916A192755F600EA384A /* JSQSystemSoundPlayer.m in Sources */,
 				43E490E11927386100EA384A /* MessageTableViewCell.m in Sources */,
 				43E4914C192754F200EA384A /* UIView+JSQMessages.m in Sources */,
 				43E4909519272B1400EA384A /* main.m in Sources */,
@@ -777,6 +776,7 @@
 				43E4909919272B1400EA384A /* enervoAppDelegate.m in Sources */,
 				43E4914D192754F200EA384A /* JSQMessagesKeyboardController.m in Sources */,
 				43E490DD1927349C00EA384A /* enervo.m in Sources */,
+				43E491771927B88100EA384A /* JSQSystemSoundPlayer.m in Sources */,
 				43E49155192754F200EA384A /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
 				43E49149192754F200EA384A /* NSString+JSQMessages.m in Sources */,
 				43E4915E192754F200EA384A /* JSQMessagesInputToolbar.m in Sources */,

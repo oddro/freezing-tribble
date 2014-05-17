@@ -19,7 +19,7 @@
     
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-200.f, 0) forBarMetrics:UIBarMetricsDefault];
 	[[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar"] forBarMetrics:UIBarMetricsDefault];
-	[[UINavigationBar appearance] setTintColor:[UIColor lightGrayColor]];
+	[[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 	
 	NSShadow *shadow = [[NSShadow alloc] init];
     
