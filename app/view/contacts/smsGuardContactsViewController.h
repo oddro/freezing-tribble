@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface smsGuardContactsViewController : UIViewController
-
+{
+    UITableView *contact;
+}
 @end
