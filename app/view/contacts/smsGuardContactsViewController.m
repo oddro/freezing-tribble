@@ -21,8 +21,68 @@
         self.view.backgroundColor = [UIColor whiteColor];
         // Custom initialization
         self.title = @"Contact";
+        contact  =[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-(64+50))];
+        contact.delegate = self;
+        contact.dataSource = self;
+        //init dummy
+        contacts_name_IndexTitles = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z"];
+
+        
+        contacts_name = @{@"A" : @[
+                                  @[@"Arie",@"081555957513"],
+                                  @[@"Asen",@"081555957513"],
+                                  @[@"Abri",@"081555957513"]],
+                          @"B" : @[
+                                  @[@"Bungkring",@"081555957513"],
+                                  @[@"Bungkarno",@"081555957513"],
+                                  @[@"Bung Hatta",@"081555957513"]]
+                          };
+        
+        contacts_name_section = [[contacts_name allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+        
+        [self.view addSubview:contact];
     }
     return self;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    return [contacts_name_section count];
+}
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [contacts_name_section objectAtIndex:section];
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    NSString *sectionTitle = [contacts_name_section objectAtIndex:section];
+    NSArray *sectionAnimals = [contacts_name objectForKey:sectionTitle];
+    return [sectionAnimals count];
+}
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    return contacts_name_IndexTitles;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    static NSString *cells = @"cell";
+    
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cells];
+    if(!cell){
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cells];
+    }
+    NSString *sectionTitle = [contacts_name_section objectAtIndex:indexPath.section];
+    NSArray *sectionAnimals = [contacts_name objectForKey:sectionTitle];
+    NSString *name = [[sectionAnimals objectAtIndex:indexPath.row]objectAtIndex:0];
+    NSString *number = [[sectionAnimals objectAtIndex:indexPath.row]objectAtIndex:1];
+    cell.textLabel.text = name;
+    cell.detailTextLabel.text = number;
+   // cell.imageView.image = [UIImage imageNamed:[self getImageFilename:animal]];
+    
+    return cell;
 }
 
 - (void)viewDidLoad

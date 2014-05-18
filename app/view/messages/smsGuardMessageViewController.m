@@ -27,6 +27,9 @@
         messageTable.delegate = self;
         messageTable.dataSource = self;
         
+        //init dummy
+        
+        
         [self.view addSubview:messageTable];
     }
     return self;
