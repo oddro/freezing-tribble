@@ -33,9 +33,9 @@
                                                            [UIFont fontWithName:fontDefault size:18], NSFontAttributeName, nil]];
     
     UINavigationController *nav1 =[[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(@"smsGuardMessageViewController") alloc]init]];
-    UINavigationController *nav2 =[[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(@"smsGuardMessageViewController") alloc]init]];
-    UINavigationController *nav3 =[[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(@"smsGuardMessageViewController") alloc]init]];
-    UINavigationController *nav4 =[[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(@"smsGuardMessageViewController") alloc]init]];
+    UINavigationController *nav2 =[[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(@"smsGuardContactsViewController") alloc]init]];
+    UINavigationController *nav3 =[[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(@"smsGuardActivationViewController") alloc]init]];
+    UINavigationController *nav4 =[[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(@"smsGuardSettingViewController") alloc]init]];
     
     [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"]];
     [[UITabBar appearance]setTintColor:[UIColor whiteColor]];

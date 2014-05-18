@@ -20,6 +20,7 @@
     if (self) {
         self.view.backgroundColor = [UIColor whiteColor];
         // Custom initialization
+        self.title = @"Contact";
     }
     return self;
 }
