@@ -109,7 +109,7 @@ static NSString * const kJSQDemoAvatarNameWoz = @"Steve Wozniak";
     self.sender = @"Enervo";
     
     [self setupTestModel];
-    
+    self.inputToolbar.contentView.leftBarButtonItem = nil;
     /**
      *  Remove camera button since media messages are not yet implemented
      *
@@ -237,7 +237,6 @@ static NSString * const kJSQDemoAvatarNameWoz = @"Steve Wozniak";
      *  Accessory button has no default functionality, yet.
      */
 }
-
 
 
 #pragma mark - JSQMessages CollectionView DataSource

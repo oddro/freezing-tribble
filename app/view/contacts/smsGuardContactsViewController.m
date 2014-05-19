@@ -21,13 +21,17 @@
         self.view.backgroundColor = [UIColor whiteColor];
         // Custom initialization
         self.title = @"Contact";
+        
+        
         contact  =[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-(64+50))];
         contact.delegate = self;
         contact.dataSource = self;
+        
+        
+        
         //init dummy
         contacts_name_IndexTitles = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z"];
 
-        
         contacts_name = @{@"A" : @[
                                   @[@"Arie",@"081555957513"],
                                   @[@"Asen",@"081555957513"],
@@ -35,15 +39,40 @@
                           @"B" : @[
                                   @[@"Bungkring",@"081555957513"],
                                   @[@"Bungkarno",@"081555957513"],
-                                  @[@"Bung Hatta",@"081555957513"]]
+                                  @[@"Bung Hatta",@"081555957513"]],
+                          @"C" : @[
+                                  @[@"Cungkring",@"081555957513"],
+                                  @[@"Cungkarno",@"081555957513"],
+                                  @[@"Cung Hatta",@"081555957513"]]
                           };
         
         contacts_name_section = [[contacts_name allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+        
+        data_contact = [[NSMutableArray alloc]init];
+        
+        searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+       
+        /*the search bar widht must be > 1, the height must be at least 44
+         (the real size of the search bar)*/
+        
+        searchDisplayController = [[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
+        /*contents controller is the UITableViewController, this let you to reuse
+         the same TableViewController Delegate method used for the main table.*/
+        
+        searchDisplayController.delegate = self;
+        searchDisplayController.searchResultsDataSource = self;
+        //set the delegate = self. Previously declared in ViewController.h
+        
+        contact.tableHeaderView = searchBar; //this line add the searchBar
+        //on the top of tableView.
         
         [self.view addSubview:contact];
     }
     return self;
 }
+
+
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -61,9 +90,12 @@
     NSArray *sectionAnimals = [contacts_name objectForKey:sectionTitle];
     return [sectionAnimals count];
 }
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
-{
-    return contacts_name_IndexTitles;
+//- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+//{
+//    return contacts_name_IndexTitles;
+//}
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    NSLog(@"searchBar button clicked");
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
