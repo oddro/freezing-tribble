@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface smsGuardSettingViewController : UIViewController
-
+@interface smsGuardSettingViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+{
+    UITableView *table_setting;
+}
 @end

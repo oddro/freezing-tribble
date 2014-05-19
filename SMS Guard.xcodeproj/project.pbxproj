@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43427B9B192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43427B93192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-02@2x.png */; };
+		43427B9C192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43427B94192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-03@2x.png */; };
+		43427B9D192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43427B95192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-04@2x.png */; };
+		43427B9E192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43427B96192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-01@2x.png */; };
+		43427B9F192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43427B97192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-02@2x.png */; };
+		43427BA0192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43427B98192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-03@2x.png */; };
+		43427BA1192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43427B99192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-04@2x.png */; };
+		43A15A20192A34AB00ECBBB9 /* smsguard-iphone-footer-icon-off-01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A15A1F192A34AB00ECBBB9 /* smsguard-iphone-footer-icon-off-01@2x.png */; };
 		43E4908919272B1400EA384A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908819272B1400EA384A /* Foundation.framework */; };
 		43E4908B19272B1400EA384A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908A19272B1400EA384A /* CoreGraphics.framework */; };
 		43E4908D19272B1400EA384A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908C19272B1400EA384A /* UIKit.framework */; };
@@ -95,6 +103,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43427B93192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-off-02@2x.png"; sourceTree = "<group>"; };
+		43427B94192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-off-03@2x.png"; sourceTree = "<group>"; };
+		43427B95192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-off-04@2x.png"; sourceTree = "<group>"; };
+		43427B96192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-on-01@2x.png"; sourceTree = "<group>"; };
+		43427B97192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-on-02@2x.png"; sourceTree = "<group>"; };
+		43427B98192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-on-03@2x.png"; sourceTree = "<group>"; };
+		43427B99192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-on-04@2x.png"; sourceTree = "<group>"; };
+		43A15A1F192A34AB00ECBBB9 /* smsguard-iphone-footer-icon-off-01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-off-01@2x.png"; sourceTree = "<group>"; };
 		43E4908519272B1400EA384A /* SMS Guard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Guard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E4908819272B1400EA384A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43E4908A19272B1400EA384A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -234,6 +250,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43427B91192A30B900B3CE49 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				43427B93192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-02@2x.png */,
+				43A15A1F192A34AB00ECBBB9 /* smsguard-iphone-footer-icon-off-01@2x.png */,
+				43427B94192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-03@2x.png */,
+				43427B95192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-04@2x.png */,
+				43427B96192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-01@2x.png */,
+				43427B97192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-02@2x.png */,
+				43427B98192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-03@2x.png */,
+				43427B99192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-04@2x.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
 		43E4907C19272B1300EA384A = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +416,7 @@
 		43E490C219272CE700EA384A /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				43427B91192A30B900B3CE49 /* icon */,
 				43E490D31927346C00EA384A /* font */,
 				43E490C319272CE700EA384A /* common */,
 				43E490C419272CE700EA384A /* navbar */,
@@ -704,12 +736,15 @@
 				43E4913F192754F200EA384A /* bubble_stroked_tailless@2x.png in Resources */,
 				43E4914F192754F200EA384A /* JSQMessagesViewController.xib in Resources */,
 				43E490D81927346C00EA384A /* pn-regular.otf in Resources */,
+				43427B9E192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-01@2x.png in Resources */,
 				43E4915C192754F200EA384A /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
 				43E49136192754F200EA384A /* bubble.png in Resources */,
 				43E49161192754F200EA384A /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				43E49141192754F200EA384A /* bubble_tailless@2x.png in Resources */,
 				43E4913D192754F200EA384A /* bubble_stroked@2x.png in Resources */,
 				43E49138192754F200EA384A /* bubble_min.png in Resources */,
+				43A15A20192A34AB00ECBBB9 /* smsguard-iphone-footer-icon-off-01@2x.png in Resources */,
+				43427B9F192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-02@2x.png in Resources */,
 				43E49139192754F200EA384A /* bubble_min@2x.png in Resources */,
 				43E4913E192754F200EA384A /* bubble_stroked_tailless.png in Resources */,
 				43E49144192754F200EA384A /* typing.png in Resources */,
@@ -722,17 +757,22 @@
 				43E49163192754F200EA384A /* JSQMessagesToolbarContentView.xib in Resources */,
 				43E49147192754F200EA384A /* message_sent.aiff in Resources */,
 				43E490D91927346C00EA384A /* pn-semi-bold.otf in Resources */,
+				43427B9B192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-02@2x.png in Resources */,
 				43E491711927577F00EA384A /* demo_avatar_cook.png in Resources */,
 				43E491721927577F00EA384A /* demo_avatar_cook@2x.png in Resources */,
 				43E4915A192754F200EA384A /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
+				43427B9D192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-04@2x.png in Resources */,
 				43E490D71927346C00EA384A /* pn-light.otf in Resources */,
 				43E49142192754F200EA384A /* camera.png in Resources */,
 				43E4909B19272B1400EA384A /* Images.xcassets in Resources */,
+				43427BA0192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-03@2x.png in Resources */,
 				43E4913A192754F200EA384A /* bubble_min_tailless.png in Resources */,
 				43E490D21927340000EA384A /* tabbar@2x.png in Resources */,
+				43427BA1192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-04@2x.png in Resources */,
 				43E49146192754F200EA384A /* message_received.aiff in Resources */,
 				43E49140192754F200EA384A /* bubble_tailless.png in Resources */,
 				43E49145192754F200EA384A /* typing@2x.png in Resources */,
+				43427B9C192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-03@2x.png in Resources */,
 				43E490D0192731B100EA384A /* navbar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -982,6 +1022,7 @@
 				43E490B319272B1400EA384A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43E490B419272B1400EA384A /* Build configuration list for PBXNativeTarget "SMS GuardTests" */ = {
 			isa = XCConfigurationList;
@@ -990,6 +1031,7 @@
 				43E490B619272B1400EA384A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

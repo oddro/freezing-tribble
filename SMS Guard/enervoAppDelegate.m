@@ -39,8 +39,37 @@
     
     [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"]];
     [[UITabBar appearance]setTintColor:[UIColor whiteColor]];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:fontDefault size:10.0f],
+                                                       NSForegroundColorAttributeName : [UIColor colorWithRed:0 green:0.482 blue:0.227 alpha:1]
+                                                       } forState:UIControlStateNormal];
     
+    
+    // doing this results in an easier to read unselected state then the default iOS 7 one
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:fontDefault size:10.0f],
+                                                        NSForegroundColorAttributeName : [UIColor whiteColor]
+                                                        } forState:UIControlStateSelected];
     [tabBarController setViewControllers:@[nav1,nav2,nav3,nav4] animated:YES];
+    
+    UITabBar *tabBar = tabBarController.tabBar;
+    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
+    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
+    UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2];
+    UITabBarItem *tabBarItem4 = [tabBar.items objectAtIndex:3];
+    
+    tabBarItem1.selectedImage = [[UIImage imageNamed:@"smsguard-iphone-footer-icon-on-01"] imageWithRenderingMode:UIImageRenderingModeAutomatic ];
+    tabBarItem1.image = [[UIImage imageNamed:@"smsguard-iphone-footer-icon-off-01"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
+    
+    tabBarItem2.selectedImage = [[UIImage imageNamed:@"smsguard-iphone-footer-icon-on-02"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
+    tabBarItem2.image = [[UIImage imageNamed:@"smsguard-iphone-footer-icon-off-02"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
+    
+    tabBarItem3.selectedImage = [[UIImage imageNamed:@"smsguard-iphone-footer-icon-on-03"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
+    tabBarItem3.image = [[UIImage imageNamed:@"smsguard-iphone-footer-icon-off-03"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
+//    tabBarItem3.title = @"xxxx";
+    
+    tabBarItem4.selectedImage = [[UIImage imageNamed:@"smsguard-iphone-footer-icon-on-04"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
+    tabBarItem4.image = [[UIImage imageNamed:@"smsguard-iphone-footer-icon-off-04"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
+//    tabBarItem4.title = @"xxxx";
+    
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
