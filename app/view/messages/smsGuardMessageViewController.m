@@ -21,7 +21,7 @@
     if (self) {
         self.view.backgroundColor = [UIColor whiteColor];
         // Custom initialization
-        self.title = @"Messages";
+          self.title = [NSString stringWithFormat:NSLocalizedString(@"Messages",nil)];
         
         messageTable  =[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-(64+50))];
         messageTable.delegate = self;

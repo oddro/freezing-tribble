@@ -6,6 +6,7 @@
   Copyright (c) 2014 enervo. All rights reserved.
 */
 "Messages" = "Pesan";
-"Contact" = "Kontak"
-"Activation" = "Aktivasi"
-"Setting" = "Pengaturan"
+"Sign In" = "Masuk Aplikasi";
+"Contact" = "Kontak";
+"Activation" = "Aktivasi";
+"Setting" = "Pengaturan";

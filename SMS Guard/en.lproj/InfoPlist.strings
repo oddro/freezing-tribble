@@ -1,2 +1,6 @@
 /* Localized versions of Info.plist keys */
-
+"Messages" = "Messages";
+"Sign In" = "Sign In";
+"Contact" = "Contact";
+"Activation" = "Activation";
+"Setting" = "Setting";
