@@ -11,5 +11,10 @@
 @interface smsGuardSettingViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *table_setting;
+    NSArray *menu_set;
+    UIAlertView *prompt_edit;
+    NSMutableArray *data;
+    int index;
+    NSString *content;
 }
 @end

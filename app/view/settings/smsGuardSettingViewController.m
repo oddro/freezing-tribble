@@ -24,6 +24,13 @@
         table_setting = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
         table_setting.delegate = self;
         table_setting.dataSource = self;
+        prompt_edit = [[UIAlertView alloc]init];
+        prompt_edit.delegate = self;
+        prompt_edit.alertViewStyle = UIAlertViewStylePlainTextInput;
+        
+        menu_set = @[@"Sms Center",@"Registration Center",@"Valid Until",@"Service Type",@"Version", @"Autolock",@"Language Selection",@"About"];
+        data = [NSMutableArray arrayWithArray:menu_set];
+        
         [self.view addSubview:table_setting];
     }
     return self;
@@ -45,27 +52,58 @@
     labelOne.text = dateStr;
     
     [headerView addSubview:labelOne];
-
+    
     
     return headerView;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 8;
+    return menu_set.count;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 50;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-   static NSString *cells = @"cell";
+    static NSString *cells = @"cell";
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cells];
     if(!cell){
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cells];
     }
-    cell.textLabel.text = @"Data";
-    cell.detailTextLabel.text = @"Some Data";
-
+    cell.textLabel.text = [menu_set objectAtIndex:indexPath.row];
+    cell.textLabel.font = [UIFont fontWithName:fontDefault size:17];
+    cell.textLabel.textColor = [UIColor darkGrayColor];
+    
+    cell.detailTextLabel.font =[UIFont fontWithName:fontDefault size:14];
+    cell.detailTextLabel.textColor = [UIColor lightGrayColor];
+    cell.detailTextLabel.text = [data objectAtIndex:indexPath.row];
+    
     return cell;
     
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(indexPath.row!=2&&indexPath.row!=3&&indexPath.row!=4&&indexPath.row!=7){
+        index = indexPath.row;
+        [prompt_edit addButtonWithTitle:@"Cancel"];
+        [prompt_edit addButtonWithTitle:@"Change"];
+        [prompt_edit setCancelButtonIndex:0];
+        [prompt_edit setTitle:[NSString stringWithFormat:@"Change %@",[menu_set objectAtIndex:indexPath.row]]];
+        
+        [prompt_edit show];
+        
+    }
+}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    if (buttonIndex == [alertView cancelButtonIndex]) {
+        NSLog(@"The cancel button was clicked for alertView");
+        
+    }
+    else{
+        [data replaceObjectAtIndex:index withObject:[prompt_edit textFieldAtIndex:0].text];
+        [table_setting reloadData];
+        
+        
+    }
+    // else do your stuff for the rest of the buttons (firstOtherButtonIndex, secondOtherButtonIndex, etc)
 }
 - (void)viewDidLoad
 {
@@ -80,14 +118,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
