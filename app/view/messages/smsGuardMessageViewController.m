@@ -26,9 +26,10 @@
         messageTable  =[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-(64+50))];
         messageTable.delegate = self;
         messageTable.dataSource = self;
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"message" ofType:@"plist"];
+        dummy_data = [[NSMutableArray alloc]initWithContentsOfFile:path];
+        NSLog(@"DATA->%@",dummy_data);
         
-        //init dummy
-        ///set bar button right
         UIButton *button1 = [[UIButton alloc] init];
         button1.frame=CGRectMake(0,0,54,45);
         
@@ -50,11 +51,12 @@
     return 80;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return dummy_data.count;
 }
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         //add code here to do what you want when you hit delete
+        [dummy_data removeObjectAtIndex:indexPath.row];
         [tableView reloadData];
     }
 }
@@ -64,7 +66,9 @@
     if(!cell){
         cell = [[MessageTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cells];
     }
-    cell.message.text = @"Traveling back and forth through time, Cable recently traveled back to the future with a special purpose";
+    cell.name.text =[[dummy_data objectAtIndex:indexPath.row]objectForKey:@"name"];
+    cell.date.text = [[dummy_data objectAtIndex:indexPath.row]objectForKey:@"date"];
+    cell.message.text = [[dummy_data objectAtIndex:indexPath.row]objectForKey:@"message"];
     [cell.message sizeToFit];
     return cell;
 }

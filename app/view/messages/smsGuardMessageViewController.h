@@ -11,5 +11,6 @@
 @interface smsGuardMessageViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *messageTable;
+    NSMutableArray *dummy_data;
 }
 @end
