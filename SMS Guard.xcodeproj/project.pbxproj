@@ -17,6 +17,8 @@
 		43A15A20192A34AB00ECBBB9 /* smsguard-iphone-footer-icon-off-01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A15A1F192A34AB00ECBBB9 /* smsguard-iphone-footer-icon-off-01@2x.png */; };
 		43A15ACC192B814F00ECBBB9 /* enervoLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15ACB192B814F00ECBBB9 /* enervoLoginViewController.m */; };
 		43A15ACE192B82A900ECBBB9 /* sign_window@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A15ACD192B82A900ECBBB9 /* sign_window@2x.png */; };
+		43A15AD1192B8A7C00ECBBB9 /* en.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43A15AD0192B8A7C00ECBBB9 /* en.strings */; };
+		43A15AD5192B8AF900ECBBB9 /* id.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43A15AD4192B8AF900ECBBB9 /* id.strings */; };
 		43E4908919272B1400EA384A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908819272B1400EA384A /* Foundation.framework */; };
 		43E4908B19272B1400EA384A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908A19272B1400EA384A /* CoreGraphics.framework */; };
 		43E4908D19272B1400EA384A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908C19272B1400EA384A /* UIKit.framework */; };
@@ -116,6 +118,10 @@
 		43A15ACA192B814F00ECBBB9 /* enervoLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enervoLoginViewController.h; sourceTree = "<group>"; };
 		43A15ACB192B814F00ECBBB9 /* enervoLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = enervoLoginViewController.m; sourceTree = "<group>"; };
 		43A15ACD192B82A900ECBBB9 /* sign_window@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign_window@2x.png"; sourceTree = "<group>"; };
+		43A15AD0192B8A7C00ECBBB9 /* en.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = en.strings; sourceTree = "<group>"; };
+		43A15AD2192B8AB300ECBBB9 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43A15AD3192B8AB300ECBBB9 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43A15AD4192B8AF900ECBBB9 /* id.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = id.strings; sourceTree = "<group>"; };
 		43E4908519272B1400EA384A /* SMS Guard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Guard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E4908819272B1400EA384A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43E4908A19272B1400EA384A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -279,6 +285,15 @@
 			path = login;
 			sourceTree = "<group>";
 		};
+		43A15ACF192B8A4100ECBBB9 /* localize */ = {
+			isa = PBXGroup;
+			children = (
+				43A15AD0192B8A7C00ECBBB9 /* en.strings */,
+				43A15AD4192B8AF900ECBBB9 /* id.strings */,
+			);
+			path = localize;
+			sourceTree = "<group>";
+		};
 		43E4907C19272B1300EA384A = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +387,7 @@
 		43E490B919272BE800EA384A /* library */ = {
 			isa = PBXGroup;
 			children = (
+				43A15ACF192B8A4100ECBBB9 /* localize */,
 				43E491731927B88100EA384A /* JSQSystemSoundPlayer */,
 				43E490E2192754F200EA384A /* JSQMessagesViewController */,
 				43E490DE1927384900EA384A /* cell */,
@@ -732,6 +748,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				id,
 			);
 			mainGroup = 43E4907C19272B1300EA384A;
 			productRefGroup = 43E4908619272B1400EA384A /* Products */;
@@ -782,11 +799,13 @@
 				43E490D71927346C00EA384A /* pn-light.otf in Resources */,
 				43E49142192754F200EA384A /* camera.png in Resources */,
 				43E4909B19272B1400EA384A /* Images.xcassets in Resources */,
+				43A15AD1192B8A7C00ECBBB9 /* en.strings in Resources */,
 				43427BA0192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-03@2x.png in Resources */,
 				43E4913A192754F200EA384A /* bubble_min_tailless.png in Resources */,
 				43E490D21927340000EA384A /* tabbar@2x.png in Resources */,
 				43427BA1192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-04@2x.png in Resources */,
 				43E49146192754F200EA384A /* message_received.aiff in Resources */,
+				43A15AD5192B8AF900ECBBB9 /* id.strings in Resources */,
 				43E49140192754F200EA384A /* bubble_tailless.png in Resources */,
 				43E49145192754F200EA384A /* typing@2x.png in Resources */,
 				43427B9C192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-03@2x.png in Resources */,
@@ -870,6 +889,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				43E4909219272B1400EA384A /* en */,
+				43A15AD2192B8AB300ECBBB9 /* id */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -878,6 +898,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				43E490AB19272B1400EA384A /* en */,
+				43A15AD3192B8AB300ECBBB9 /* id */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

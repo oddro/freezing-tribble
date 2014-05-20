@@ -1,0 +1,11 @@
+/* 
+  en.strings
+  SMS Guard
+
+  Created by Arie Prasetyo on 5/20/14.
+  Copyright (c) 2014 enervo. All rights reserved.
+*/
+"Messages" = "Messages";
+"Contact" = "Contact"
+"Activation" = "Activation"
+"Setting" = "Setting"
