@@ -14,6 +14,7 @@
     UITabBarController *tabBarController;
 }
 @property (strong, nonatomic) UIWindow *window;
-
+-(void)prompt_login_show;
+-(void)signinToServer;
 
 @end

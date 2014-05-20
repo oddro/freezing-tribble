@@ -14,5 +14,17 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "enervo.h"
+#import "enervoAppDelegate.h"
 #import "JSQMessages.h"
+
+#define enrv ((enervoAppDelegate *)[[UIApplication sharedApplication] delegate])
+#define NSStringFromBOOL(aBOOL)    aBOOL? @"YES" : @"NO"
+//remove nslog while production
+#ifdef DEBUG
+#   define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#   define NSLog(...)
+#endif
+
+
 #endif

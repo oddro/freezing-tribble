@@ -15,6 +15,8 @@
 		43427BA0192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43427B98192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-03@2x.png */; };
 		43427BA1192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43427B99192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-04@2x.png */; };
 		43A15A20192A34AB00ECBBB9 /* smsguard-iphone-footer-icon-off-01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A15A1F192A34AB00ECBBB9 /* smsguard-iphone-footer-icon-off-01@2x.png */; };
+		43A15ACC192B814F00ECBBB9 /* enervoLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15ACB192B814F00ECBBB9 /* enervoLoginViewController.m */; };
+		43A15ACE192B82A900ECBBB9 /* sign_window@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A15ACD192B82A900ECBBB9 /* sign_window@2x.png */; };
 		43E4908919272B1400EA384A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908819272B1400EA384A /* Foundation.framework */; };
 		43E4908B19272B1400EA384A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908A19272B1400EA384A /* CoreGraphics.framework */; };
 		43E4908D19272B1400EA384A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908C19272B1400EA384A /* UIKit.framework */; };
@@ -111,6 +113,9 @@
 		43427B98192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-on-03@2x.png"; sourceTree = "<group>"; };
 		43427B99192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-on-04@2x.png"; sourceTree = "<group>"; };
 		43A15A1F192A34AB00ECBBB9 /* smsguard-iphone-footer-icon-off-01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-off-01@2x.png"; sourceTree = "<group>"; };
+		43A15ACA192B814F00ECBBB9 /* enervoLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enervoLoginViewController.h; sourceTree = "<group>"; };
+		43A15ACB192B814F00ECBBB9 /* enervoLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = enervoLoginViewController.m; sourceTree = "<group>"; };
+		43A15ACD192B82A900ECBBB9 /* sign_window@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign_window@2x.png"; sourceTree = "<group>"; };
 		43E4908519272B1400EA384A /* SMS Guard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Guard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E4908819272B1400EA384A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43E4908A19272B1400EA384A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -265,6 +270,15 @@
 			path = icon;
 			sourceTree = "<group>";
 		};
+		43A15AC9192B814200ECBBB9 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				43A15ACA192B814F00ECBBB9 /* enervoLoginViewController.h */,
+				43A15ACB192B814F00ECBBB9 /* enervoLoginViewController.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
 		43E4907C19272B1300EA384A = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +382,7 @@
 		43E490BA19272BE800EA384A /* view */ = {
 			isa = PBXGroup;
 			children = (
+				43A15AC9192B814200ECBBB9 /* login */,
 				43E490BB19272C4900EA384A /* activation */,
 				43E490BC19272C4900EA384A /* contacts */,
 				43E490BD19272C4900EA384A /* messages */,
@@ -428,6 +443,7 @@
 		43E490C319272CE700EA384A /* common */ = {
 			isa = PBXGroup;
 			children = (
+				43A15ACD192B82A900ECBBB9 /* sign_window@2x.png */,
 				43E4916F1927577F00EA384A /* demo_avatar_cook.png */,
 				43E491701927577F00EA384A /* demo_avatar_cook@2x.png */,
 			);
@@ -740,6 +756,7 @@
 				43E4915C192754F200EA384A /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
 				43E49136192754F200EA384A /* bubble.png in Resources */,
 				43E49161192754F200EA384A /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
+				43A15ACE192B82A900ECBBB9 /* sign_window@2x.png in Resources */,
 				43E49141192754F200EA384A /* bubble_tailless@2x.png in Resources */,
 				43E4913D192754F200EA384A /* bubble_stroked@2x.png in Resources */,
 				43E49138192754F200EA384A /* bubble_min.png in Resources */,
@@ -822,6 +839,7 @@
 				43E4915E192754F200EA384A /* JSQMessagesInputToolbar.m in Sources */,
 				43E490C119272C7100EA384A /* smsGuardMessageViewController.m in Sources */,
 				43E49159192754F200EA384A /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
+				43A15ACC192B814F00ECBBB9 /* enervoLoginViewController.m in Sources */,
 				43E4914A192754F200EA384A /* UIColor+JSQMessages.m in Sources */,
 				43E4915D192754F200EA384A /* JSQMessagesComposerTextView.m in Sources */,
 				43E49158192754F200EA384A /* JSQMessagesCollectionViewCell.m in Sources */,
