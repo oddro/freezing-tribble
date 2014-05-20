@@ -28,13 +28,24 @@
         messageTable.dataSource = self;
         
         //init dummy
+        ///set bar button right
+        UIButton *button1 = [[UIButton alloc] init];
+        button1.frame=CGRectMake(0,0,54,45);
         
+        [button1 setBackgroundImage:[UIImage imageNamed: @"smsguard-iphone-message-button-add"] forState:UIControlStateNormal];
+        [button1 addTarget:self action:nil forControlEvents:UIControlEventTouchUpInside];
         
+        UIBarButtonItem *right_bar =[[UIBarButtonItem alloc]initWithCustomView:button1];
+        right_bar.imageInsets = UIEdgeInsetsMake(0.0, 20, 0, -20);
+        
+        self.navigationItem.rightBarButtonItem = right_bar;
         [self.view addSubview:messageTable];
     }
     return self;
 }
+-(void)composeNew:(id)sender{
 
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 80;
 }
