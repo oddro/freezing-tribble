@@ -26,7 +26,7 @@
         table_setting.dataSource = self;
         prompt_edit = [[UIAlertView alloc]init];
         prompt_edit.delegate = self;
-        prompt_edit.alertViewStyle = UIAlertViewStylePlainTextInput;
+        
         
         menu_set = @[@"Sms Center",@"Registration Center",@"Valid Until",@"Service Type",@"Version", @"Autolock",@"Language Selection",@"About"];
         data = [NSMutableArray arrayWithArray:menu_set];
@@ -84,6 +84,8 @@
         if ([sender respondsToSelector:@selector(setText:)]) {
             [sender performSelector:@selector(setText:) withObject:selectedValue];
         }
+         [data replaceObjectAtIndex:index withObject:selectedValue];
+        [table_setting reloadData];
     };
     ActionStringCancelBlock cancel = ^(ActionSheetStringPicker *picker) {
         NSLog(@"Block Picker Canceled");
@@ -101,13 +103,14 @@
     [ActionSheetStringPicker showPickerWithTitle:@"Select a Block" rows:data_picker initialSelection:0 doneBlock:done cancelBlock:cancel origin:sender];
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    index = indexPath.row;
     if(indexPath.row!=2&&indexPath.row!=3&&indexPath.row!=4&&indexPath.row!=7&&indexPath.row!=5&&indexPath.row!=6&&indexPath.row!=8){
-        index = indexPath.row;
+        
         [prompt_edit addButtonWithTitle:@"Cancel"];
         [prompt_edit addButtonWithTitle:@"Change"];
         [prompt_edit setCancelButtonIndex:0];
         [prompt_edit setTitle:[NSString stringWithFormat:@"Change %@",[menu_set objectAtIndex:indexPath.row]]];
-        
+        prompt_edit.alertViewStyle = UIAlertViewStylePlainTextInput;
         [prompt_edit show];
         
     }
@@ -116,8 +119,9 @@
     }
     if(indexPath.row==7){
         [prompt_edit setTitle:@"About"];
-        prompt_edit.alertViewStyle = UIAlertViewStyleDefault;
         prompt_edit.message = @"Lorem Ipsum Dolor Sit Amet";
+        [prompt_edit addButtonWithTitle:@"OK"];
+        [prompt_edit setCancelButtonIndex:0];
         [prompt_edit show];
     }
 }
