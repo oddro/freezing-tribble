@@ -114,7 +114,7 @@
     if(indexPath.row==5||indexPath.row==6){
         [self picker:table_setting row:indexPath.row];
     }
-    if(indexPath.row==8){
+    if(indexPath.row==7){
         [prompt_edit setTitle:@"About"];
         prompt_edit.alertViewStyle = UIAlertViewStyleDefault;
         prompt_edit.message = @"Lorem Ipsum Dolor Sit Amet";
