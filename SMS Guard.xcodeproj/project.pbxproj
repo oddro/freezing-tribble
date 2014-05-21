@@ -21,6 +21,13 @@
 		43A15AD5192B8AF900ECBBB9 /* id.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43A15AD4192B8AF900ECBBB9 /* id.strings */; };
 		43A15AD7192BCC0800ECBBB9 /* smsguard-iphone-message-button-add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A15AD6192BCC0800ECBBB9 /* smsguard-iphone-message-button-add@2x.png */; };
 		43A15ADB192BD46400ECBBB9 /* message.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43A15ADA192BD46400ECBBB9 /* message.plist */; };
+		43A15AE5192CD07F00ECBBB9 /* phone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43A15AE4192CD07F00ECBBB9 /* phone.plist */; };
+		43A15AF5192CD60600ECBBB9 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AE8192CD60600ECBBB9 /* AbstractActionSheetPicker.m */; };
+		43A15AF6192CD60600ECBBB9 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AEA192CD60600ECBBB9 /* ActionSheetCustomPicker.m */; };
+		43A15AF7192CD60600ECBBB9 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AED192CD60600ECBBB9 /* ActionSheetDatePicker.m */; };
+		43A15AF8192CD60600ECBBB9 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AEF192CD60600ECBBB9 /* ActionSheetDistancePicker.m */; };
+		43A15AF9192CD60600ECBBB9 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AF2192CD60600ECBBB9 /* ActionSheetStringPicker.m */; };
+		43A15AFA192CD60600ECBBB9 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AF4192CD60600ECBBB9 /* DistancePickerView.m */; };
 		43E4908919272B1400EA384A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908819272B1400EA384A /* Foundation.framework */; };
 		43E4908B19272B1400EA384A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908A19272B1400EA384A /* CoreGraphics.framework */; };
 		43E4908D19272B1400EA384A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908C19272B1400EA384A /* UIKit.framework */; };
@@ -126,6 +133,21 @@
 		43A15AD4192B8AF900ECBBB9 /* id.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = id.strings; sourceTree = "<group>"; };
 		43A15AD6192BCC0800ECBBB9 /* smsguard-iphone-message-button-add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-message-button-add@2x.png"; sourceTree = "<group>"; };
 		43A15ADA192BD46400ECBBB9 /* message.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = message.plist; sourceTree = "<group>"; };
+		43A15AE4192CD07F00ECBBB9 /* phone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = phone.plist; path = ../../../../../../../Desktop/phone.plist; sourceTree = "<group>"; };
+		43A15AE7192CD60600ECBBB9 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		43A15AE8192CD60600ECBBB9 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		43A15AE9192CD60600ECBBB9 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		43A15AEA192CD60600ECBBB9 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetCustomPicker.m; sourceTree = "<group>"; };
+		43A15AEB192CD60600ECBBB9 /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
+		43A15AEC192CD60600ECBBB9 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDatePicker.h; sourceTree = "<group>"; };
+		43A15AED192CD60600ECBBB9 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		43A15AEE192CD60600ECBBB9 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		43A15AEF192CD60600ECBBB9 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		43A15AF0192CD60600ECBBB9 /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPicker.h; sourceTree = "<group>"; };
+		43A15AF1192CD60600ECBBB9 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		43A15AF2192CD60600ECBBB9 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		43A15AF3192CD60600ECBBB9 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistancePickerView.h; sourceTree = "<group>"; };
+		43A15AF4192CD60600ECBBB9 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
 		43E4908519272B1400EA384A /* SMS Guard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Guard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E4908819272B1400EA384A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43E4908A19272B1400EA384A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -293,11 +315,33 @@
 		43A15ACF192B8A4100ECBBB9 /* localize */ = {
 			isa = PBXGroup;
 			children = (
+				43A15AE4192CD07F00ECBBB9 /* phone.plist */,
 				43A15ADA192BD46400ECBBB9 /* message.plist */,
 				43A15AD0192B8A7C00ECBBB9 /* en.strings */,
 				43A15AD4192B8AF900ECBBB9 /* id.strings */,
 			);
 			path = localize;
+			sourceTree = "<group>";
+		};
+		43A15AE6192CD60600ECBBB9 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				43A15AE7192CD60600ECBBB9 /* AbstractActionSheetPicker.h */,
+				43A15AE8192CD60600ECBBB9 /* AbstractActionSheetPicker.m */,
+				43A15AE9192CD60600ECBBB9 /* ActionSheetCustomPicker.h */,
+				43A15AEA192CD60600ECBBB9 /* ActionSheetCustomPicker.m */,
+				43A15AEB192CD60600ECBBB9 /* ActionSheetCustomPickerDelegate.h */,
+				43A15AEC192CD60600ECBBB9 /* ActionSheetDatePicker.h */,
+				43A15AED192CD60600ECBBB9 /* ActionSheetDatePicker.m */,
+				43A15AEE192CD60600ECBBB9 /* ActionSheetDistancePicker.h */,
+				43A15AEF192CD60600ECBBB9 /* ActionSheetDistancePicker.m */,
+				43A15AF0192CD60600ECBBB9 /* ActionSheetPicker.h */,
+				43A15AF1192CD60600ECBBB9 /* ActionSheetStringPicker.h */,
+				43A15AF2192CD60600ECBBB9 /* ActionSheetStringPicker.m */,
+				43A15AF3192CD60600ECBBB9 /* DistancePickerView.h */,
+				43A15AF4192CD60600ECBBB9 /* DistancePickerView.m */,
+			);
+			path = Pickers;
 			sourceTree = "<group>";
 		};
 		43E4907C19272B1300EA384A = {
@@ -393,6 +437,7 @@
 		43E490B919272BE800EA384A /* library */ = {
 			isa = PBXGroup;
 			children = (
+				43A15AE6192CD60600ECBBB9 /* Pickers */,
 				43A15ACF192B8A4100ECBBB9 /* localize */,
 				43E491731927B88100EA384A /* JSQSystemSoundPlayer */,
 				43E490E2192754F200EA384A /* JSQMessagesViewController */,
@@ -810,6 +855,7 @@
 				43A15AD7192BCC0800ECBBB9 /* smsguard-iphone-message-button-add@2x.png in Resources */,
 				43E4913A192754F200EA384A /* bubble_min_tailless.png in Resources */,
 				43E490D21927340000EA384A /* tabbar@2x.png in Resources */,
+				43A15AE5192CD07F00ECBBB9 /* phone.plist in Resources */,
 				43427BA1192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-04@2x.png in Resources */,
 				43E49146192754F200EA384A /* message_received.aiff in Resources */,
 				43A15AD5192B8AF900ECBBB9 /* id.strings in Resources */,
@@ -852,6 +898,7 @@
 				43E49148192754F200EA384A /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				43E49152192754F200EA384A /* JSQMessagesTimestampFormatter.m in Sources */,
 				43E49157192754F200EA384A /* JSQMessagesCollectionView.m in Sources */,
+				43A15AF9192CD60600ECBBB9 /* ActionSheetStringPicker.m in Sources */,
 				43E4915F192754F200EA384A /* JSQMessagesLabel.m in Sources */,
 				43E490CB19272E6E00EA384A /* smsGuardContactsViewController.m in Sources */,
 				43E49160192754F200EA384A /* JSQMessagesLoadEarlierHeaderView.m in Sources */,
@@ -860,15 +907,20 @@
 				43E4909919272B1400EA384A /* enervoAppDelegate.m in Sources */,
 				43E4914D192754F200EA384A /* JSQMessagesKeyboardController.m in Sources */,
 				43E490DD1927349C00EA384A /* enervo.m in Sources */,
+				43A15AF8192CD60600ECBBB9 /* ActionSheetDistancePicker.m in Sources */,
 				43E491771927B88100EA384A /* JSQSystemSoundPlayer.m in Sources */,
 				43E49155192754F200EA384A /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
 				43E49149192754F200EA384A /* NSString+JSQMessages.m in Sources */,
+				43A15AF7192CD60600ECBBB9 /* ActionSheetDatePicker.m in Sources */,
+				43A15AFA192CD60600ECBBB9 /* DistancePickerView.m in Sources */,
+				43A15AF5192CD60600ECBBB9 /* AbstractActionSheetPicker.m in Sources */,
 				43E4915E192754F200EA384A /* JSQMessagesInputToolbar.m in Sources */,
 				43E490C119272C7100EA384A /* smsGuardMessageViewController.m in Sources */,
 				43E49159192754F200EA384A /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
 				43A15ACC192B814F00ECBBB9 /* enervoLoginViewController.m in Sources */,
 				43E4914A192754F200EA384A /* UIColor+JSQMessages.m in Sources */,
 				43E4915D192754F200EA384A /* JSQMessagesComposerTextView.m in Sources */,
+				43A15AF6192CD60600ECBBB9 /* ActionSheetCustomPicker.m in Sources */,
 				43E49158192754F200EA384A /* JSQMessagesCollectionViewCell.m in Sources */,
 				43E4915B192754F200EA384A /* JSQMessagesCollectionViewCellOutgoing.m in Sources */,
 			);

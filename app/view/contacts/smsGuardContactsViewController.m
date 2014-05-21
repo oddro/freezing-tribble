@@ -32,23 +32,12 @@
         //init dummy
         contacts_name_IndexTitles = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z"];
 
-        contacts_name = @{@"A" : @[
-                                  @[@"Arie",@"081555957513"],
-                                  @[@"Asen",@"081555957513"],
-                                  @[@"Abri",@"081555957513"]],
-                          @"B" : @[
-                                  @[@"Bungkring",@"081555957513"],
-                                  @[@"Bungkarno",@"081555957513"],
-                                  @[@"Bung Hatta",@"081555957513"]],
-                          @"C" : @[
-                                  @[@"Cungkring",@"081555957513"],
-                                  @[@"Cungkarno",@"081555957513"],
-                                  @[@"Cung Hatta",@"081555957513"]]
-                          };
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"phone" ofType:@"plist"];
+        data_contact = [[NSMutableArray alloc]initWithContentsOfFile:path];
+        NSLog(@"DATA->%d",[data_contact count]);
+         NSLog(@"DATA->%@",[[data_contact objectAtIndex:0] objectForKey:@"A"]);
         
-        contacts_name_section = [[contacts_name allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-        
-        data_contact = [[NSMutableArray alloc]init];
+        contacts_name_section = [[[data_contact objectAtIndex:0] allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
         
         searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
        
@@ -75,7 +64,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        //add code here to do what you want when you hit delete
+        
         [tableView reloadData];
     }
 }
@@ -93,7 +82,7 @@
 {
     // Return the number of rows in the section.
     NSString *sectionTitle = [contacts_name_section objectAtIndex:section];
-    NSArray *sectionAnimals = [contacts_name objectForKey:sectionTitle];
+    NSArray *sectionAnimals = [[data_contact objectAtIndex:0] objectForKey:sectionTitle];
     return [sectionAnimals count];
 }
 //- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
@@ -113,11 +102,9 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cells];
     }
     NSString *sectionTitle = [contacts_name_section objectAtIndex:indexPath.section];
-    NSArray *sectionAnimals = [contacts_name objectForKey:sectionTitle];
-    NSString *name = [[sectionAnimals objectAtIndex:indexPath.row]objectAtIndex:0];
-    NSString *number = [[sectionAnimals objectAtIndex:indexPath.row]objectAtIndex:1];
-    cell.textLabel.text = name;
-    cell.detailTextLabel.text = number;
+    NSArray *sectionAnimals = [[data_contact objectAtIndex:0] objectForKey:sectionTitle];
+    cell.textLabel.text = [[sectionAnimals objectAtIndex:indexPath.row]objectForKey:@"name"];
+    cell.detailTextLabel.text = [[sectionAnimals objectAtIndex:indexPath.row]objectForKey:@"phone"];
    // cell.imageView.image = [UIImage imageNamed:[self getImageFilename:animal]];
     
     return cell;

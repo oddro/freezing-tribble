@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ActionSheetPicker.h"
 
+@class AbstractActionSheetPicker;
 @interface smsGuardSettingViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *table_setting;
@@ -17,4 +19,5 @@
     int index;
     NSString *content;
 }
+@property (nonatomic, strong) AbstractActionSheetPicker *actionSheetPicker;
 @end

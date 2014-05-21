@@ -79,8 +79,29 @@
     return cell;
     
 }
+-(void)picker:(id)sender row:(int)row{
+    ActionStringDoneBlock done = ^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+        if ([sender respondsToSelector:@selector(setText:)]) {
+            [sender performSelector:@selector(setText:) withObject:selectedValue];
+        }
+    };
+    ActionStringCancelBlock cancel = ^(ActionSheetStringPicker *picker) {
+        NSLog(@"Block Picker Canceled");
+    };
+    NSArray *data_picker;
+    switch (row) {
+        case 5:
+             data_picker= [NSArray arrayWithObjects:@"1 Minutes", @"2 Minutes", @"3 Minutes", @"1 Hour", nil];
+            break;
+           
+        default:
+             data_picker= [NSArray arrayWithObjects:@"Indonesia",@"English", nil];
+            break;
+    }
+    [ActionSheetStringPicker showPickerWithTitle:@"Select a Block" rows:data_picker initialSelection:0 doneBlock:done cancelBlock:cancel origin:sender];
+}
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if(indexPath.row!=2&&indexPath.row!=3&&indexPath.row!=4&&indexPath.row!=7){
+    if(indexPath.row!=2&&indexPath.row!=3&&indexPath.row!=4&&indexPath.row!=7&&indexPath.row!=5&&indexPath.row!=6&&indexPath.row!=8){
         index = indexPath.row;
         [prompt_edit addButtonWithTitle:@"Cancel"];
         [prompt_edit addButtonWithTitle:@"Change"];
@@ -89,6 +110,15 @@
         
         [prompt_edit show];
         
+    }
+    if(indexPath.row==5||indexPath.row==6){
+        [self picker:table_setting row:indexPath.row];
+    }
+    if(indexPath.row==8){
+        [prompt_edit setTitle:@"About"];
+        prompt_edit.alertViewStyle = UIAlertViewStyleDefault;
+        prompt_edit.message = @"Lorem Ipsum Dolor Sit Amet";
+        [prompt_edit show];
     }
 }
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
