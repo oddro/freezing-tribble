@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D054C98192DCC7D00BDDDCA /* phone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D054C97192DCC7D00BDDDCA /* phone.plist */; };
 		43427B9B192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43427B93192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-02@2x.png */; };
 		43427B9C192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43427B94192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-03@2x.png */; };
 		43427B9D192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43427B95192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-04@2x.png */; };
@@ -21,7 +22,6 @@
 		43A15AD5192B8AF900ECBBB9 /* id.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43A15AD4192B8AF900ECBBB9 /* id.strings */; };
 		43A15AD7192BCC0800ECBBB9 /* smsguard-iphone-message-button-add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A15AD6192BCC0800ECBBB9 /* smsguard-iphone-message-button-add@2x.png */; };
 		43A15ADB192BD46400ECBBB9 /* message.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43A15ADA192BD46400ECBBB9 /* message.plist */; };
-		43A15AE5192CD07F00ECBBB9 /* phone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43A15AE4192CD07F00ECBBB9 /* phone.plist */; };
 		43A15AF5192CD60600ECBBB9 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AE8192CD60600ECBBB9 /* AbstractActionSheetPicker.m */; };
 		43A15AF6192CD60600ECBBB9 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AEA192CD60600ECBBB9 /* ActionSheetCustomPicker.m */; };
 		43A15AF7192CD60600ECBBB9 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AED192CD60600ECBBB9 /* ActionSheetDatePicker.m */; };
@@ -116,6 +116,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D054C97192DCC7D00BDDDCA /* phone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = phone.plist; sourceTree = "<group>"; };
 		43427B93192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-off-02@2x.png"; sourceTree = "<group>"; };
 		43427B94192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-off-03@2x.png"; sourceTree = "<group>"; };
 		43427B95192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-footer-icon-off-04@2x.png"; sourceTree = "<group>"; };
@@ -133,7 +134,6 @@
 		43A15AD4192B8AF900ECBBB9 /* id.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = id.strings; sourceTree = "<group>"; };
 		43A15AD6192BCC0800ECBBB9 /* smsguard-iphone-message-button-add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-message-button-add@2x.png"; sourceTree = "<group>"; };
 		43A15ADA192BD46400ECBBB9 /* message.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = message.plist; sourceTree = "<group>"; };
-		43A15AE4192CD07F00ECBBB9 /* phone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = phone.plist; path = ../../../../../../../Desktop/phone.plist; sourceTree = "<group>"; };
 		43A15AE7192CD60600ECBBB9 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
 		43A15AE8192CD60600ECBBB9 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
 		43A15AE9192CD60600ECBBB9 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPicker.h; sourceTree = "<group>"; };
@@ -315,7 +315,7 @@
 		43A15ACF192B8A4100ECBBB9 /* localize */ = {
 			isa = PBXGroup;
 			children = (
-				43A15AE4192CD07F00ECBBB9 /* phone.plist */,
+				3D054C97192DCC7D00BDDDCA /* phone.plist */,
 				43A15ADA192BD46400ECBBB9 /* message.plist */,
 				43A15AD0192B8A7C00ECBBB9 /* en.strings */,
 				43A15AD4192B8AF900ECBBB9 /* id.strings */,
@@ -855,7 +855,6 @@
 				43A15AD7192BCC0800ECBBB9 /* smsguard-iphone-message-button-add@2x.png in Resources */,
 				43E4913A192754F200EA384A /* bubble_min_tailless.png in Resources */,
 				43E490D21927340000EA384A /* tabbar@2x.png in Resources */,
-				43A15AE5192CD07F00ECBBB9 /* phone.plist in Resources */,
 				43427BA1192A30B900B3CE49 /* smsguard-iphone-footer-icon-on-04@2x.png in Resources */,
 				43E49146192754F200EA384A /* message_received.aiff in Resources */,
 				43A15AD5192B8AF900ECBBB9 /* id.strings in Resources */,
@@ -864,6 +863,7 @@
 				43E49145192754F200EA384A /* typing@2x.png in Resources */,
 				43427B9C192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-03@2x.png in Resources */,
 				43E490D0192731B100EA384A /* navbar@2x.png in Resources */,
+				3D054C98192DCC7D00BDDDCA /* phone.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
