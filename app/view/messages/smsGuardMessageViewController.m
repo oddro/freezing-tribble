@@ -44,9 +44,7 @@
     }
     return self;
 }
--(void)composeNew:(id)sender{
 
-}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 80;
 }

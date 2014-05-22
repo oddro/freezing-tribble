@@ -7,7 +7,7 @@
 //
 
 #import "smsGuardContactsViewController.h"
-
+#import "smsGuardSendContactViewcontroller.h"
 @interface smsGuardContactsViewController ()
 
 @end
@@ -58,7 +58,7 @@
         button1.frame=CGRectMake(0,0,54,45);
         
         [button1 setBackgroundImage:[UIImage imageNamed: @"smsguard-iphone-contact-button-add"] forState:UIControlStateNormal];
-        [button1 addTarget:self action:nil forControlEvents:UIControlEventTouchUpInside];
+        [button1 addTarget:self action:@selector(composeNew:) forControlEvents:UIControlEventTouchUpInside];
         
         UIBarButtonItem *right_bar =[[UIBarButtonItem alloc]initWithCustomView:button1];
         right_bar.imageInsets = UIEdgeInsetsMake(0.0, 20, 0, -20);
@@ -68,7 +68,10 @@
     }
     return self;
 }
-
+-(void)composeNew:(id)sender{
+    smsGuardSendContactViewcontroller *new = [[smsGuardSendContactViewcontroller alloc]init];
+    [self.navigationController pushViewController:new animated:YES];
+}
 
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {

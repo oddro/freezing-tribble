@@ -29,6 +29,9 @@
 		43A15AF9192CD60600ECBBB9 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AF2192CD60600ECBBB9 /* ActionSheetStringPicker.m */; };
 		43A15AFA192CD60600ECBBB9 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AF4192CD60600ECBBB9 /* DistancePickerView.m */; };
 		43A15AFC192CE32B00ECBBB9 /* smsguard-iphone-contact-button-add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A15AFB192CE32B00ECBBB9 /* smsguard-iphone-contact-button-add@2x.png */; };
+		43CAD76E192E42A0002C273A /* smsGuardSendContactViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CAD76D192E42A0002C273A /* smsGuardSendContactViewcontroller.m */; };
+		43CAD77A192E4C43002C273A /* compose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CAD779192E4C43002C273A /* compose@2x.png */; };
+		43CAD77C192E4EDA002C273A /* elements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43CAD77B192E4EDA002C273A /* elements.txt */; };
 		43E4908919272B1400EA384A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908819272B1400EA384A /* Foundation.framework */; };
 		43E4908B19272B1400EA384A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908A19272B1400EA384A /* CoreGraphics.framework */; };
 		43E4908D19272B1400EA384A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908C19272B1400EA384A /* UIKit.framework */; };
@@ -150,6 +153,10 @@
 		43A15AF3192CD60600ECBBB9 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistancePickerView.h; sourceTree = "<group>"; };
 		43A15AF4192CD60600ECBBB9 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
 		43A15AFB192CE32B00ECBBB9 /* smsguard-iphone-contact-button-add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-contact-button-add@2x.png"; sourceTree = "<group>"; };
+		43CAD76C192E42A0002C273A /* smsGuardSendContactViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smsGuardSendContactViewcontroller.h; sourceTree = "<group>"; };
+		43CAD76D192E42A0002C273A /* smsGuardSendContactViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smsGuardSendContactViewcontroller.m; sourceTree = "<group>"; };
+		43CAD779192E4C43002C273A /* compose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compose@2x.png"; sourceTree = "<group>"; };
+		43CAD77B192E4EDA002C273A /* elements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = elements.txt; sourceTree = "<group>"; };
 		43E4908519272B1400EA384A /* SMS Guard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Guard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E4908819272B1400EA384A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43E4908A19272B1400EA384A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -318,6 +325,7 @@
 		43A15ACF192B8A4100ECBBB9 /* localize */ = {
 			isa = PBXGroup;
 			children = (
+				43CAD77B192E4EDA002C273A /* elements.txt */,
 				3D054C97192DCC7D00BDDDCA /* phone.plist */,
 				43A15ADA192BD46400ECBBB9 /* message.plist */,
 				43A15AD0192B8A7C00ECBBB9 /* en.strings */,
@@ -345,6 +353,15 @@
 				43A15AF4192CD60600ECBBB9 /* DistancePickerView.m */,
 			);
 			path = Pickers;
+			sourceTree = "<group>";
+		};
+		43CAD767192E4261002C273A /* send */ = {
+			isa = PBXGroup;
+			children = (
+				43CAD76C192E42A0002C273A /* smsGuardSendContactViewcontroller.h */,
+				43CAD76D192E42A0002C273A /* smsGuardSendContactViewcontroller.m */,
+			);
+			path = send;
 			sourceTree = "<group>";
 		};
 		43E4907C19272B1300EA384A = {
@@ -473,6 +490,7 @@
 		43E490BC19272C4900EA384A /* contacts */ = {
 			isa = PBXGroup;
 			children = (
+				43CAD767192E4261002C273A /* send */,
 				43E490C919272E6E00EA384A /* smsGuardContactsViewController.h */,
 				43E490CA19272E6E00EA384A /* smsGuardContactsViewController.m */,
 			);
@@ -513,6 +531,7 @@
 		43E490C319272CE700EA384A /* common */ = {
 			isa = PBXGroup;
 			children = (
+				43CAD779192E4C43002C273A /* compose@2x.png */,
 				43A15ACD192B82A900ECBBB9 /* sign_window@2x.png */,
 				43E4916F1927577F00EA384A /* demo_avatar_cook.png */,
 				43E491701927577F00EA384A /* demo_avatar_cook@2x.png */,
@@ -837,6 +856,7 @@
 				43E4913E192754F200EA384A /* bubble_stroked_tailless.png in Resources */,
 				43E49144192754F200EA384A /* typing.png in Resources */,
 				43E4909319272B1400EA384A /* InfoPlist.strings in Resources */,
+				43CAD77C192E4EDA002C273A /* elements.txt in Resources */,
 				43E4913B192754F200EA384A /* bubble_min_tailless@2x.png in Resources */,
 				43E4913C192754F200EA384A /* bubble_stroked.png in Resources */,
 				43E49143192754F200EA384A /* camera@2x.png in Resources */,
@@ -845,6 +865,7 @@
 				43E49165192754F200EA384A /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
 				43E49163192754F200EA384A /* JSQMessagesToolbarContentView.xib in Resources */,
 				43E49147192754F200EA384A /* message_sent.aiff in Resources */,
+				43CAD77A192E4C43002C273A /* compose@2x.png in Resources */,
 				43E490D91927346C00EA384A /* pn-semi-bold.otf in Resources */,
 				43427B9B192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-02@2x.png in Resources */,
 				43E491711927577F00EA384A /* demo_avatar_cook.png in Resources */,
@@ -899,6 +920,7 @@
 				43E49164192754F200EA384A /* JSQMessagesTypingIndicatorFooterView.m in Sources */,
 				43E49156192754F200EA384A /* JSQMessage.m in Sources */,
 				43E49153192754F200EA384A /* JSQMessagesToolbarButtonFactory.m in Sources */,
+				43CAD76E192E42A0002C273A /* smsGuardSendContactViewcontroller.m in Sources */,
 				43E49148192754F200EA384A /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				43E49152192754F200EA384A /* JSQMessagesTimestampFormatter.m in Sources */,
 				43E49157192754F200EA384A /* JSQMessagesCollectionView.m in Sources */,

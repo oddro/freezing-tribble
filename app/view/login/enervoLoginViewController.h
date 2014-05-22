@@ -13,5 +13,6 @@
     UITextField *password;
     UIButton *sign_in;
     UIButton *forget_password;
+    
 }
 @end
