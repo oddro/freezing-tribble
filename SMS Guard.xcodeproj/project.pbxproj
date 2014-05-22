@@ -28,6 +28,7 @@
 		43A15AF8192CD60600ECBBB9 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AEF192CD60600ECBBB9 /* ActionSheetDistancePicker.m */; };
 		43A15AF9192CD60600ECBBB9 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AF2192CD60600ECBBB9 /* ActionSheetStringPicker.m */; };
 		43A15AFA192CD60600ECBBB9 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A15AF4192CD60600ECBBB9 /* DistancePickerView.m */; };
+		43A15AFC192CE32B00ECBBB9 /* smsguard-iphone-contact-button-add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A15AFB192CE32B00ECBBB9 /* smsguard-iphone-contact-button-add@2x.png */; };
 		43E4908919272B1400EA384A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908819272B1400EA384A /* Foundation.framework */; };
 		43E4908B19272B1400EA384A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908A19272B1400EA384A /* CoreGraphics.framework */; };
 		43E4908D19272B1400EA384A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908C19272B1400EA384A /* UIKit.framework */; };
@@ -148,6 +149,7 @@
 		43A15AF2192CD60600ECBBB9 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
 		43A15AF3192CD60600ECBBB9 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistancePickerView.h; sourceTree = "<group>"; };
 		43A15AF4192CD60600ECBBB9 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
+		43A15AFB192CE32B00ECBBB9 /* smsguard-iphone-contact-button-add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smsguard-iphone-contact-button-add@2x.png"; sourceTree = "<group>"; };
 		43E4908519272B1400EA384A /* SMS Guard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Guard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E4908819272B1400EA384A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43E4908A19272B1400EA384A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -290,6 +292,7 @@
 		43427B91192A30B900B3CE49 /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				43A15AFB192CE32B00ECBBB9 /* smsguard-iphone-contact-button-add@2x.png */,
 				43A15AD6192BCC0800ECBBB9 /* smsguard-iphone-message-button-add@2x.png */,
 				43427B93192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-02@2x.png */,
 				43A15A1F192A34AB00ECBBB9 /* smsguard-iphone-footer-icon-off-01@2x.png */,
@@ -837,6 +840,7 @@
 				43E4913B192754F200EA384A /* bubble_min_tailless@2x.png in Resources */,
 				43E4913C192754F200EA384A /* bubble_stroked.png in Resources */,
 				43E49143192754F200EA384A /* camera@2x.png in Resources */,
+				43A15AFC192CE32B00ECBBB9 /* smsguard-iphone-contact-button-add@2x.png in Resources */,
 				43E49137192754F200EA384A /* bubble@2x.png in Resources */,
 				43E49165192754F200EA384A /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
 				43E49163192754F200EA384A /* JSQMessagesToolbarContentView.xib in Resources */,

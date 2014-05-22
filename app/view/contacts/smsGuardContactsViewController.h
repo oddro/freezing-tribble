@@ -16,7 +16,9 @@
     NSArray *contacts_name_section;
     UISearchBar *searchBar;
     UISearchDisplayController *searchDisplayController;
-    NSArray *searchData;
+    NSMutableArray *searchData;
     NSMutableArray *data_contact;
+    
+    NSArray *searchResults;
 }
 @end
