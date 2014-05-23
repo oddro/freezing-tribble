@@ -42,6 +42,9 @@ float tableHeight = 30;
         select_contact.backgroundColor = [UIColor clearColor];
         [select_contact addTarget:self action:@selector(openAddressBook) forControlEvents:UIControlEventTouchUpInside];
         
+        send_contact = [UIButton buttonWithType:UIButtonTypeCustom];
+        send_contact.backgroundColor =[UIColor clearColor];
+        send_contact.frame=CGRectMake(30, 102, 236,35);
         
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"elements.txt" ofType:nil];
         NSData* data = [NSData dataWithContentsOfFile:filePath];
@@ -61,6 +64,7 @@ float tableHeight = 30;
         [self.view addSubview:phone_numb];
         [self.view addSubview:autoCompleteTableView];
         [self.view addSubview:select_contact];
+        [self.view addSubview:send_contact];
     }
     return self;
 }

@@ -32,6 +32,7 @@
 		43CAD76E192E42A0002C273A /* smsGuardSendContactViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CAD76D192E42A0002C273A /* smsGuardSendContactViewcontroller.m */; };
 		43CAD77A192E4C43002C273A /* compose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CAD779192E4C43002C273A /* compose@2x.png */; };
 		43CAD77C192E4EDA002C273A /* elements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43CAD77B192E4EDA002C273A /* elements.txt */; };
+		43CAD77E192E5C8B002C273A /* avtivate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CAD77D192E5C8B002C273A /* avtivate@2x.png */; };
 		43E4908919272B1400EA384A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908819272B1400EA384A /* Foundation.framework */; };
 		43E4908B19272B1400EA384A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908A19272B1400EA384A /* CoreGraphics.framework */; };
 		43E4908D19272B1400EA384A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908C19272B1400EA384A /* UIKit.framework */; };
@@ -157,6 +158,7 @@
 		43CAD76D192E42A0002C273A /* smsGuardSendContactViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smsGuardSendContactViewcontroller.m; sourceTree = "<group>"; };
 		43CAD779192E4C43002C273A /* compose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compose@2x.png"; sourceTree = "<group>"; };
 		43CAD77B192E4EDA002C273A /* elements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = elements.txt; sourceTree = "<group>"; };
+		43CAD77D192E5C8B002C273A /* avtivate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avtivate@2x.png"; sourceTree = "<group>"; };
 		43E4908519272B1400EA384A /* SMS Guard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Guard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E4908819272B1400EA384A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43E4908A19272B1400EA384A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -531,6 +533,7 @@
 		43E490C319272CE700EA384A /* common */ = {
 			isa = PBXGroup;
 			children = (
+				43CAD77D192E5C8B002C273A /* avtivate@2x.png */,
 				43CAD779192E4C43002C273A /* compose@2x.png */,
 				43A15ACD192B82A900ECBBB9 /* sign_window@2x.png */,
 				43E4916F1927577F00EA384A /* demo_avatar_cook.png */,
@@ -886,6 +889,7 @@
 				43E49140192754F200EA384A /* bubble_tailless.png in Resources */,
 				43A15ADB192BD46400ECBBB9 /* message.plist in Resources */,
 				43E49145192754F200EA384A /* typing@2x.png in Resources */,
+				43CAD77E192E5C8B002C273A /* avtivate@2x.png in Resources */,
 				43427B9C192A30B900B3CE49 /* smsguard-iphone-footer-icon-off-03@2x.png in Resources */,
 				43E490D0192731B100EA384A /* navbar@2x.png in Resources */,
 				3D054C98192DCC7D00BDDDCA /* phone.plist in Resources */,

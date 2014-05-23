@@ -11,11 +11,12 @@
 @interface smsGuardSendContactViewcontroller : UIViewController<UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource>
 {
     UITextField *phone_numb;
+    UIButton *send_contact;
     UITextField *seach_contact;
     UITableView *autoCompleteTableView;
     NSMutableArray *elementArray,*autoCompleteArray;
     UIButton *select_contact;
-    UIButton *send_contact;
+   
     
     
 }

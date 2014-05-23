@@ -20,6 +20,20 @@
     if (self) {
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"Activation";
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"avtivate"]];
+        
+        activateCode = [[UITextField alloc]initWithFrame:CGRectMake(30, 50, 236,35)];
+        activateCode.backgroundColor = [UIColor clearColor];
+        activateCode.returnKeyType  = UIReturnKeyGo;
+        activateCode.delegate = self;
+        activateCode.font = [UIFont fontWithName:fontDefault size:14];
+        
+        activateButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        activateButton.backgroundColor =[UIColor clearColor];
+        activateButton.frame=CGRectMake(30, 102, 236,35);
+
+        [self.view addSubview:activateCode];
+        [self.view addSubview:activateButton];
         // Custom initialization
     }
     return self;

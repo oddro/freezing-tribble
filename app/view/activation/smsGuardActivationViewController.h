@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface smsGuardActivationViewController : UIViewController
+@interface smsGuardActivationViewController : UIViewController<UITextFieldDelegate>{
+    UITextField *activateCode;
+    UIButton *activateButton;
+
+}
 
 @end
