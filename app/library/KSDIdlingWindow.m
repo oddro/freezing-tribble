@@ -1,13 +1,4 @@
 
-//  KSDIdlingWindow.m
-//
-//  Created by Brian King on 4/13/10.
-//  Copyright 2010 King Software Designs. All rights reserved.
-//
-// Based off:
-//  http://stackoverflow.com/questions/273450/iphone-detecting-user-inactivity-idle-time-since-last-screen-touch
-//
-
 #import "KSDIdlingWindow.h"
 
 NSString * const KSDIdlingWindowIdleNotification   = @"KSDIdlingWindowIdleNotification";
@@ -27,23 +18,23 @@ NSString * const KSDIdlingWindowActiveNotification = @"KSDIdlingWindowActiveNoti
 - (id) initWithFrame:(CGRect)frame {
 	self = [super initWithFrame:frame];
 	if (self) {
-		self.idleTimeInterval = 0;
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        if([[defaults objectForKey:@"time"]intValue])
+            self.idleTimeInterval = [[defaults objectForKey:@"time"]intValue];
+        else
+            self.idleTimeInterval = 10;
 	}
 	return self;
 }
 #pragma mark activity timer
 
 - (void)sendEvent:(UIEvent *)event {
-     [super sendEvent:event];
-    if (event.type == UIEventTypeTouches) {
-        for(UITouch * t in [event allTouches]) {
-            if(t.phase == UITouchPhaseBegan) {
-                NSLog(@"123");
-            }
-        }
-    }
-   
-	
+    [super sendEvent:event];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if([[defaults objectForKey:@"time"]intValue])
+        self.idleTimeInterval = [[defaults objectForKey:@"time"]intValue];
+    else
+        self.idleTimeInterval = 10;
     NSSet *allTouches = [event allTouches];
     if ([allTouches count] > 0) {
         
@@ -55,6 +46,7 @@ NSString * const KSDIdlingWindowActiveNotification = @"KSDIdlingWindowActiveNoti
 			} else {
 				[idleTimer invalidate];
 			}
+            
 			if (idleTimeInterval != 0) {
 				self.idleTimer = [NSTimer scheduledTimerWithTimeInterval:idleTimeInterval
 																  target:self
@@ -63,18 +55,29 @@ NSString * const KSDIdlingWindowActiveNotification = @"KSDIdlingWindowActiveNoti
 			}
 		}
 	}
+    else{
+        if (idleTimeInterval != 0) {
+            self.idleTimer = [NSTimer scheduledTimerWithTimeInterval:idleTimeInterval
+                                                              target:self
+                                                            selector:@selector(windowIdleNotification)
+                                                            userInfo:nil repeats:NO];
+        }
+    }
 }
 
 
 - (void)windowIdleNotification {
+    NSLog(@"time habis");
 	NSNotificationCenter *dnc = [NSNotificationCenter defaultCenter];
 	[dnc postNotificationName:KSDIdlingWindowIdleNotification
 					   object:self
 					 userInfo:nil];
 	self.idleTimer = nil;
+    [enrv prompt_login_show];
 }
 
 - (void)windowActiveNotification {
+    NSLog(@"windowActiveNotification");
 	NSNotificationCenter *dnc = [NSNotificationCenter defaultCenter];
 	[dnc postNotificationName:KSDIdlingWindowActiveNotification
 					   object:self

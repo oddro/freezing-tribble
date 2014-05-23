@@ -13,6 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    
     ///do some dirty work
     tabBarController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
     //init nav
@@ -71,7 +72,7 @@
 //    tabBarItem4.title = @"xxxx";
     
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[KSDIdlingWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = tabBarController;
@@ -117,7 +118,6 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    [self prompt_login_show];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 

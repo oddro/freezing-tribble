@@ -30,6 +30,8 @@
         
         menu_set = @[@"Sms Center",@"Registration Center",@"Valid Until",@"Service Type",@"Version", @"Autolock",@"Language Selection",@"About"];
         data = [NSMutableArray arrayWithArray:menu_set];
+
+
         
         [self.view addSubview:table_setting];
     }
@@ -84,6 +86,28 @@
         if ([sender respondsToSelector:@selector(setText:)]) {
             [sender performSelector:@selector(setText:) withObject:selectedValue];
         }
+        
+        ////set timer here
+        if(row==5){
+             NSLog(@"Begin  Data saving");
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            
+            if([selectedValue isEqualToString:@"1 Minutes"]){
+                [defaults setObject:@"60" forKey:@"time"];
+            }
+            if([selectedValue isEqualToString:@"2 Minutes"]){
+                [defaults setObject:@"120"forKey:@"time"];
+            }
+            if([selectedValue isEqualToString:@"3 Minutes"]){
+                [defaults setObject:@"180" forKey:@"time"];
+            }
+            if([selectedValue isEqualToString:@"1 Hour"]){
+                [defaults setObject:@"3600" forKey:@"time"];
+            }
+            
+            [defaults synchronize];
+             NSLog(@"Data saved");
+        }
          [data replaceObjectAtIndex:index withObject:selectedValue];
         [table_setting reloadData];
     };
@@ -94,6 +118,7 @@
     switch (row) {
         case 5:
              data_picker= [NSArray arrayWithObjects:@"1 Minutes", @"2 Minutes", @"3 Minutes", @"1 Hour", nil];
+            
             break;
            
         default:
