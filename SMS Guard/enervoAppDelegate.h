@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "KSDIdlingWindow.h"
 @interface enervoAppDelegate : UIResponder <UIApplicationDelegate,UITabBarControllerDelegate>
 {
     NSArray *controller;
     UITabBarController *tabBarController;
 }
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) KSDIdlingWindow *window;
 -(void)prompt_login_show;
 -(void)signinToServer;
 

@@ -79,6 +79,16 @@
     [self prompt_login_show];
     return YES;
 }
+- (void)sendEvent:(UIEvent *)event {
+    
+    
+    if (event.type == UIEventTypeTouches) {
+        NSLog(@"touch get");
+        
+        //here you can invalidate & restart your 5s timer
+    }
+    
+}
 -(void)signinToServer{
     
 }

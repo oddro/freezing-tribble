@@ -33,6 +33,7 @@
 		43CAD77A192E4C43002C273A /* compose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CAD779192E4C43002C273A /* compose@2x.png */; };
 		43CAD77C192E4EDA002C273A /* elements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43CAD77B192E4EDA002C273A /* elements.txt */; };
 		43CAD77E192E5C8B002C273A /* avtivate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CAD77D192E5C8B002C273A /* avtivate@2x.png */; };
+		43CAD785192F8D94002C273A /* KSDIdlingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CAD784192F8D94002C273A /* KSDIdlingWindow.m */; };
 		43E4908919272B1400EA384A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908819272B1400EA384A /* Foundation.framework */; };
 		43E4908B19272B1400EA384A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908A19272B1400EA384A /* CoreGraphics.framework */; };
 		43E4908D19272B1400EA384A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4908C19272B1400EA384A /* UIKit.framework */; };
@@ -159,6 +160,8 @@
 		43CAD779192E4C43002C273A /* compose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compose@2x.png"; sourceTree = "<group>"; };
 		43CAD77B192E4EDA002C273A /* elements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = elements.txt; sourceTree = "<group>"; };
 		43CAD77D192E5C8B002C273A /* avtivate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avtivate@2x.png"; sourceTree = "<group>"; };
+		43CAD783192F8D94002C273A /* KSDIdlingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSDIdlingWindow.h; path = app/library/KSDIdlingWindow.h; sourceTree = SOURCE_ROOT; };
+		43CAD784192F8D94002C273A /* KSDIdlingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSDIdlingWindow.m; path = app/library/KSDIdlingWindow.m; sourceTree = SOURCE_ROOT; };
 		43E4908519272B1400EA384A /* SMS Guard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Guard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E4908819272B1400EA384A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43E4908A19272B1400EA384A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -366,6 +369,15 @@
 			path = send;
 			sourceTree = "<group>";
 		};
+		43CAD77F192F8467002C273A /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				43CAD783192F8D94002C273A /* KSDIdlingWindow.h */,
+				43CAD784192F8D94002C273A /* KSDIdlingWindow.m */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
 		43E4907C19272B1300EA384A = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +471,7 @@
 		43E490B919272BE800EA384A /* library */ = {
 			isa = PBXGroup;
 			children = (
+				43CAD77F192F8467002C273A /* helper */,
 				43A15AE6192CD60600ECBBB9 /* Pickers */,
 				43A15ACF192B8A4100ECBBB9 /* localize */,
 				43E491731927B88100EA384A /* JSQSystemSoundPlayer */,
@@ -930,6 +943,7 @@
 				43E49157192754F200EA384A /* JSQMessagesCollectionView.m in Sources */,
 				43A15AF9192CD60600ECBBB9 /* ActionSheetStringPicker.m in Sources */,
 				43E4915F192754F200EA384A /* JSQMessagesLabel.m in Sources */,
+				43CAD785192F8D94002C273A /* KSDIdlingWindow.m in Sources */,
 				43E490CB19272E6E00EA384A /* smsGuardContactsViewController.m in Sources */,
 				43E49160192754F200EA384A /* JSQMessagesLoadEarlierHeaderView.m in Sources */,
 				43E490C819272E5D00EA384A /* smsGuardSettingViewController.m in Sources */,
